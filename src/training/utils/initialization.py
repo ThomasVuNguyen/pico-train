@@ -18,7 +18,6 @@ from typing import Dict, Optional, Union
 
 import lightning as L
 import torch
-import wandb
 import yaml
 from datasets import Dataset, DownloadConfig, load_dataset
 from datasets import config as datasets_config
@@ -27,8 +26,8 @@ from lightning.fabric.loggers import Logger as FabricLogger
 from lightning.fabric.utilities.rank_zero import rank_zero_only
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer
-from wandb.integration.lightning.fabric import WandbLogger
 
+import wandb
 from src.config import (
     CheckpointingConfig,
     DataConfig,
@@ -39,6 +38,7 @@ from src.config import (
 )
 from src.model import PicoDecoder
 from src.training.utils.io import use_backoff
+from wandb.integration.lightning.fabric import WandbLogger
 
 warnings.filterwarnings(
     "ignore",

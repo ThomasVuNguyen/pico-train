@@ -31,7 +31,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.attention import SDPBackend, sdpa_kernel
-from transformers import PretrainedConfig, PreTrainedModel
+from transformers import GenerationMixin, PretrainedConfig, PreTrainedModel
+from transformers.generation import GenerationConfig
 from transformers.modeling_outputs import CausalLMOutput, CausalLMOutputWithPast
 
 try:
@@ -134,7 +135,7 @@ class RoPE(nn.Module):
         Initializes the complex frequency tensor that is used to compute the RoPE embeddings.
 
         Note other implementations will use cos and sin directly, but using the complex
-        number representation is (probably?) more efficient:
+        number representation is (probably) more efficient:
 
             e^(theta * i * t) = cos(theta * t) + i * sin(theta * t) [Euler's formula]
         """
@@ -314,7 +315,7 @@ class Attention(nn.Module):
                 queries.contiguous(),
                 keys.contiguous(),
                 values.contiguous(),
-                attn_mask=mask.to(queries.dtype),
+                attn_mask=mask.to(queries.dtype) if mask is not None else None,
                 enable_gqa=apply_gqa,
             )
 
@@ -556,9 +557,9 @@ class PicoDecoderHFConfig(PretrainedConfig):
         return cls.from_dict(asdict(model_config))
 
 
-class PicoDecoderHF(PreTrainedModel):
+class PicoDecoderHF(PreTrainedModel, GenerationMixin):
     """
-    HuggingFace wrapper for the Pico model.
+    HuggingFace wrapper for the Pico model with generation support.
 
     Many evaluation frameworks require a model be setup as a HuggingFace model, so we provide a simple
     wrapper that does just that. When we save checkpoints of the Pico model, we save both the normal
@@ -571,10 +572,18 @@ class PicoDecoderHF(PreTrainedModel):
 
     config_class = PicoDecoderHFConfig
     _no_split_modules = ["PicoBlock", "Attention", "SwiGLU", "RMSNorm"]
+    main_input_name = "input_ids"
 
     def __init__(self, config: PicoDecoderHFConfig):
         super().__init__(config)
         self.pico_decoder = PicoDecoder(config)
+        # Initialize generation config with defaults
+        self.generation_config = GenerationConfig()
+        # Set some reasonable defaults for the model
+        if hasattr(config, "max_position_embeddings"):
+            self.generation_config.max_length = config.max_position_embeddings
+        if hasattr(config, "vocab_size"):
+            self.generation_config.vocab_size = config.vocab_size
 
     def forward(
         self,
@@ -601,8 +610,262 @@ class PicoDecoderHF(PreTrainedModel):
                 logits=logits,
             )
 
+    def prepare_inputs_for_generation(
+        self,
+        input_ids: torch.LongTensor,
+        past_key_values: Optional[Tuple[Tuple[torch.FloatTensor]]] = None,
+        attention_mask: Optional[torch.LongTensor] = None,
+        **kwargs,
+    ) -> Dict[str, Any]:
+        """
+        Prepare inputs for generation.
+
+        Args:
+            input_ids: Input token IDs
+            past_key_values: Cached key-value pairs from previous forward passes
+            attention_mask: Attention mask for the input
+            **kwargs: Additional arguments
+
+        Returns:
+            Dictionary containing prepared inputs
+        """
+        # If we have past_key_values, we only need the last token
+        if past_key_values is not None:
+            input_ids = input_ids[:, -1:]
+
+        return {
+            "input_ids": input_ids,
+            "past_key_values": past_key_values,
+            "use_cache": True,
+        }
+
+    def get_input_embeddings(self):
+        """Get the input embeddings layer."""
+        return self.pico_decoder.embedding_proj
+
+    def set_input_embeddings(self, value):
+        """Set the input embeddings layer."""
+        self.pico_decoder.embedding_proj = value
+
+    def get_output_embeddings(self):
+        """Get the output embeddings layer."""
+        return self.pico_decoder.de_embedding_proj
+
+    def set_output_embeddings(self, value):
+        """Set the output embeddings layer."""
+        self.pico_decoder.de_embedding_proj = value
+
+    def get_lm_head(self):
+        """Get the language model head."""
+        return self.pico_decoder.de_embedding_proj
+
+    def can_generate(self) -> bool:
+        """Check if the model can generate text."""
+        return True
+
+    @property
+    def is_encoder_decoder(self) -> bool:
+        """Check if the model is an encoder-decoder model."""
+        return False
+
+    @property
+    def can_use_cache(self) -> bool:
+        """Check if the model can use KV cache."""
+        return True
+
+    def resize_token_embeddings(
+        self, new_num_tokens: Optional[int] = None
+    ) -> torch.nn.Embedding:
+        """Resize token embeddings."""
+        old_embeddings = self.get_input_embeddings()
+        if new_num_tokens is None:
+            new_num_tokens = old_embeddings.num_embeddings
+
+        new_embeddings = torch.nn.Embedding(
+            new_num_tokens, old_embeddings.embedding_dim
+        )
+        new_embeddings.weight.data[: old_embeddings.num_embeddings] = (
+            old_embeddings.weight.data
+        )
+
+        self.pico_decoder.embedding_proj = new_embeddings
+        self.pico_decoder.de_embedding_proj = torch.nn.Linear(
+            old_embeddings.embedding_dim, new_num_tokens, bias=False
+        )
+
+        return new_embeddings
+
 
 # Register for auto classes
 PicoDecoderHFConfig.register_for_auto_class()
 PicoDecoderHF.register_for_auto_class("AutoModel")
 PicoDecoderHF.register_for_auto_class("AutoModelForCausalLM")
+
+
+########################################################
+#
+# New PicoDecoderForCausalLM class for generation support
+#
+########################################################
+
+
+class PicoDecoderForCausalLM(PreTrainedModel, GenerationMixin):
+    """
+    PicoDecoderForCausalLM: A HuggingFace-compatible model that properly supports generation.
+
+    This class is designed to work with existing checkpoints and provides full generation support.
+    It inherits from the right base classes that HuggingFace expects for text generation.
+    """
+
+    config_class = PicoDecoderHFConfig
+    _no_split_modules = ["PicoBlock", "Attention", "SwiGLU", "RMSNorm"]
+    main_input_name = "input_ids"
+
+    def __init__(self, config: PicoDecoderHFConfig):
+        super().__init__(config)
+        self.pico_decoder = PicoDecoder(config)
+        # Initialize generation config with defaults
+        self.generation_config = GenerationConfig()
+        # Set some reasonable defaults for the model
+        if hasattr(config, "max_position_embeddings"):
+            self.generation_config.max_length = config.max_position_embeddings
+        if hasattr(config, "vocab_size"):
+            self.generation_config.vocab_size = config.vocab_size
+
+    def forward(
+        self,
+        input_ids: torch.Tensor,
+        past_key_values: Optional[Tuple[Tuple[torch.Tensor]]] = None,
+        use_cache: bool = False,
+        **kwargs,
+    ) -> Union[CausalLMOutput, CausalLMOutputWithPast]:
+        """Forward pass for text generation."""
+        logits, past_key_values = self.pico_decoder(
+            input_ids, past_key_values, use_cache
+        )
+        if use_cache:
+            return CausalLMOutputWithPast(
+                logits=logits,
+                past_key_values=past_key_values,
+            )
+        else:
+            return CausalLMOutput(
+                logits=logits,
+            )
+
+    def prepare_inputs_for_generation(
+        self,
+        input_ids: torch.LongTensor,
+        past_key_values: Optional[Tuple[Tuple[torch.FloatTensor]]] = None,
+        attention_mask: Optional[torch.LongTensor] = None,
+        **kwargs,
+    ) -> Dict[str, Any]:
+        """Prepare inputs for generation."""
+        # If we have past_key_values, we only need the last token
+        if past_key_values is not None:
+            input_ids = input_ids[:, -1:]
+
+        return {
+            "input_ids": input_ids,
+            "past_key_values": past_key_values,
+            "use_cache": True,
+        }
+
+    def get_input_embeddings(self):
+        """Get the input embeddings layer."""
+        return self.pico_decoder.embedding_proj
+
+    def set_input_embeddings(self, value):
+        """Set the input embeddings layer."""
+        self.pico_decoder.embedding_proj = value
+
+    def get_output_embeddings(self):
+        """Get the output embeddings layer."""
+        return self.pico_decoder.de_embedding_proj
+
+    def set_output_embeddings(self, value):
+        """Set the output embeddings layer."""
+        self.pico_decoder.de_embedding_proj = value
+
+    def get_lm_head(self):
+        """Get the language model head."""
+        return self.pico_decoder.de_embedding_proj
+
+    def can_generate(self) -> bool:
+        """Check if the model can generate text."""
+        return True
+
+    @property
+    def is_encoder_decoder(self) -> bool:
+        """Check if the model is an encoder-decoder model."""
+        return False
+
+    @property
+    def can_use_cache(self) -> bool:
+        """Check if the model can use KV cache."""
+        return True
+
+    def resize_token_embeddings(
+        self, new_num_tokens: Optional[int] = None
+    ) -> torch.nn.Embedding:
+        """Resize token embeddings."""
+        old_embeddings = self.get_input_embeddings()
+        if new_num_tokens is None:
+            new_num_tokens = old_embeddings.num_embeddings
+
+        new_embeddings = torch.nn.Embedding(
+            new_num_tokens, old_embeddings.embedding_dim
+        )
+        new_embeddings.weight.data[: old_embeddings.num_embeddings] = (
+            old_embeddings.weight.data
+        )
+
+        self.pico_decoder.embedding_proj = new_embeddings
+        self.pico_decoder.de_embedding_proj = torch.nn.Linear(
+            old_embeddings.embedding_dim, new_num_tokens, bias=False
+        )
+
+        return new_embeddings
+
+    @classmethod
+    def from_pretrained(cls, pretrained_model_name_or_path, *model_args, **kwargs):
+        """
+        Load a pretrained model from a checkpoint.
+
+        This method handles loading from both the old PicoDecoderHF format and the new format.
+        """
+        # First try to load with the new class
+        try:
+            return super().from_pretrained(
+                pretrained_model_name_or_path, *model_args, **kwargs
+            )
+        except Exception as e:
+            print(f"Failed to load with new class: {e}")
+            print("Attempting to load with legacy class and convert...")
+
+            # Try to load with the old class and convert
+            try:
+                from transformers import AutoModel
+
+                old_model = AutoModel.from_pretrained(
+                    pretrained_model_name_or_path,
+                    trust_remote_code=True,
+                    *model_args,
+                    **kwargs,
+                )
+
+                # Create new model instance
+                new_model = cls(old_model.config)
+
+                # Copy state dict
+                new_model.load_state_dict(old_model.state_dict(), strict=False)
+
+                return new_model
+
+            except Exception as e2:
+                print(f"Failed to convert from legacy format: {e2}")
+                raise e
+
+
+# Register the new class
+PicoDecoderForCausalLM.register_for_auto_class("AutoModelForCausalLM")
