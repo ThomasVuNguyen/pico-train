@@ -6,7 +6,7 @@
 # export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 checkpointing:
-  run_name: "pico-decoder-tiny"
+  run_name: "pico-decoder-tiny-dolma29k"
   save_to_hf: true
   hf_checkpoint:
     repo_id: "ThomasTheMaker/pico-decoder-tiny"
@@ -40,7 +40,7 @@ evaluation:
   
 data:
   dataset:
-    name: "pico-lm/pretokenized-dolma-tinsy"
+    name: "pico-lm/pretokenized-dolma"
   dataloader:
     batch_size: 4  # Must be >= gradient_accumulation_steps
   tokenizer:
