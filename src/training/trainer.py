@@ -95,6 +95,15 @@ class Trainer:
         )
         L.seed_everything(42, verbose=False)
 
+        # Optimize for Tensor Cores on RTX 5090
+        if self.fabric.device.type == "cuda":
+            torch.set_float32_matmul_precision(
+                "high"
+            )  # Best performance for Tensor Cores
+            print(
+                "Enabled Tensor Core optimization: torch.set_float32_matmul_precision('high')"
+            )
+
         # Set up logging
         self.logger = initialize_logging(
             monitoring_config=self.configs["monitoring"],

@@ -1,0 +1,48 @@
+# Max VRAM efficient config - uses as much VRAM as possible efficiently
+# This configuration maximizes GPU utilization while staying within memory limits
+# on GTX5090: optimized for Tensor Cores
+# 
+# If you still get OOM errors, run this before training:
+# export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
+checkpointing:
+  run_name: "pico-decoder-tiny-max-vram"
+  save_to_hf: true
+  hf_checkpoint:
+    repo_id: "ThomasTheMaker/pico-decoder-tiny"
+
+  learning_dynamics:
+    batch_size: 4  # Minimal batch size for learning dynamics
+    eval_data: null  # Disable learning dynamics to save memory
+
+model:
+    d_model: 96
+    activation_hidden_dim: 384
+
+monitoring:
+  save_to_wandb: false
+  wandb:
+    project: "pico-decoder-tiny"
+    entity: "boymyc"
+
+training:
+  optimization:
+    gradient_accumulation_steps: 256  # Increased to maintain effective batch size
+  
+  fabric:
+    num_nodes: 1
+    num_devices: 1
+    precision: "bf16-mixed"  # BF16 for better Tensor Core utilization
+  
+evaluation: 
+  paloma:
+    batch_size: 1  # Minimal evaluation batch size
+  
+data:
+  dataset:
+    name: "pico-lm/pretokenized-dolma-tinsy"
+  dataloader:
+    batch_size: 256  # Must be >= gradient_accumulation_steps
+  tokenizer:
+    name: "allenai/OLMo-7B-0724-hf"
+    vocab_size: 50304
