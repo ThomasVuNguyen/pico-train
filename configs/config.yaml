@@ -1,15 +1,13 @@
-# Max VRAM efficient config - uses as much VRAM as possible efficiently
-# This configuration maximizes GPU utilization while staying within memory limits
-# on GTX5090: optimized for Tensor Cores
-# 
-# If you still get OOM errors, run this before training:
-# export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+# High Quality Training Config - Optimized for superior model performance
+# This configuration prioritizes model quality over training speed
+# Designed for RTX 5090 with focus on preventing overfitting and maximizing generalization
 
 checkpointing:
-  run_name: "pico-decoder-tiny-dolma29k-v2"
+  run_name: "pico-decoder-tiny-dolma29k-v3"
   save_to_hf: true
   hf_checkpoint:
     repo_id: "ThomasTheMaker/pico-decoder-tiny"
+  save_every_n_steps: 500  # Frequent checkpoints for quality monitoring
 
   learning_dynamics:
     batch_size: 1  # Minimal batch size for learning dynamics
@@ -18,8 +16,9 @@ checkpointing:
 model:
     d_model: 96
     activation_hidden_dim: 384
-    dropout: 0.1  # Add dropout for regularization
-    attention_dropout: 0.1  # Add attention dropout
+    dropout: 0.15  # Increased dropout for stronger regularization
+    attention_dropout: 0.15  # Increased attention dropout
+    layer_norm_eps: 1e-5  # Tighter normalization for stability
 
 monitoring:
   save_to_wandb: false
@@ -27,31 +26,45 @@ monitoring:
     project: "pico-decoder-tiny"
     entity: "boymyc"
   logging:
-    log_every_n_steps: 50  # More frequent logging for better monitoring
+    log_every_n_steps: 25  # Very frequent logging for quality monitoring
 
 training:
+  max_steps: 20000  # Longer training for better convergence
   optimization:
-    lr: 0.0001  # Reduced from 3e-4 to prevent overfitting
-    lr_warmup_steps: 5000  # Extended warmup for stability
-    lr_scheduler: "linear_with_warmup"  # Supported scheduler with extended warmup
-    weight_decay: 0.01  # Add weight decay for regularization
-    max_grad_norm: 1.0  # Gradient clipping to prevent instability
-    gradient_accumulation_steps: 2  # Reduced to work with larger batch size
+    lr: 0.00005  # Even lower learning rate for precision training
+    lr_warmup_steps: 8000  # Extended warmup for stability
+    lr_scheduler: "linear_with_warmup"  # Stable scheduler
+    weight_decay: 0.02  # Increased weight decay for stronger regularization
+    max_grad_norm: 0.5  # Tighter gradient clipping for stability
+    gradient_accumulation_steps: 4  # Increased for better gradient estimates
+    optimizer: "adamw"
+    adam_beta1: 0.9  # Standard AdamW beta1
+    adam_beta2: 0.999  # Standard AdamW beta2
+    adam_epsilon: 1e-8  # Tighter epsilon for numerical stability
   
   fabric:
     num_nodes: 1
     num_devices: 1
-    precision: "bf16-mixed"  # BF16 for better Tensor Core utilization
+    precision: "bf16-mixed"  # BF16 for Tensor Core optimization
   
 evaluation: 
   paloma:
     batch_size: 1  # Minimal evaluation batch size
+    eval_every_n_steps: 250  # Very frequent evaluation for quality monitoring
   
 data:
   dataset:
     name: "pico-lm/pretokenized-dolma"
   dataloader:
-    batch_size: 8  # Increased from 4 for better training quality
+    batch_size: 4  # Reduced for more stable training
   tokenizer:
     name: "allenai/OLMo-7B-0724-hf"
     vocab_size: 50304
+
+# Quality-focused training strategy:
+# 1. Lower learning rate (0.00005) for precise parameter updates
+# 2. Extended warmup (8000 steps) for stable foundation
+# 3. Stronger regularization (dropout 0.15, weight decay 0.02)
+# 4. Tighter gradient clipping (0.5) for stability
+# 5. More frequent evaluation (every 250 steps) for quality monitoring
+# 6. Longer training (20000 steps) for full convergence
