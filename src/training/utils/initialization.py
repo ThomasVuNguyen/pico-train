@@ -10,6 +10,7 @@ more experimental stuff to you.
 """
 
 import logging
+import math
 import os
 import warnings
 from dataclasses import fields, is_dataclass
@@ -470,6 +471,29 @@ def initialize_lr_scheduler(
                 )
 
         lr_lambda = lambda step: _lr_lambda(  # noqa: E731
+            step,
+            training_config.optimization.lr_warmup_steps,
+            training_config.max_steps,
+        )
+        lr_scheduler = torch.optim.lr_scheduler.LambdaLR(
+            optimizer,
+            lr_lambda,
+        )
+    elif training_config.optimization.lr_scheduler == "cosine":
+        # Cosine decay with warmup: linear warmup followed by cosine decay
+        # This provides sustained learning over long training runs
+        def _cosine_lr_lambda(curr_step, num_warmup_steps, max_steps):
+            if curr_step < num_warmup_steps:
+                # Linear warmup
+                return float(curr_step) / float(max(1, num_warmup_steps))
+            else:
+                # Cosine decay to 0.1 * initial_lr (not to 0)
+                progress = float(curr_step - num_warmup_steps) / float(
+                    max(1, max_steps - num_warmup_steps)
+                )
+                return max(0.1, 0.5 * (1.0 + math.cos(math.pi * progress)))
+
+        lr_lambda = lambda step: _cosine_lr_lambda(  # noqa: E731
             step,
             training_config.optimization.lr_warmup_steps,
             training_config.max_steps,
