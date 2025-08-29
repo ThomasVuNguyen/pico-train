@@ -1,0 +1,6535 @@
+{
+  "runs": [
+    {
+      "run_name": "pico-decoder-tiny-dolma-teensy-v0",
+      "log_file": "log_20250828_210922.log",
+      "training_metrics": [
+        {
+          "step": 0,
+          "loss": 10.9914,
+          "learning_rate": 0.0,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [
+        {
+          "step": 0,
+          "paloma": 59434.76600609756
+        },
+        {
+          "step": 27,
+          "paloma": 59120.39268292683
+        }
+      ],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 0.0003,
+        "max_steps": 200000,
+        "batch_size": 8
+      }
+    },
+    {
+      "run_name": "pico-decoder-tiny-dolma-teensy-v1",
+      "log_file": "log_20250828_220514.log",
+      "training_metrics": [
+        {
+          "step": 0,
+          "loss": 10.9886,
+          "learning_rate": 0.0,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 100,
+          "loss": 10.9373,
+          "learning_rate": 1.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 200,
+          "loss": 10.5423,
+          "learning_rate": 2.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 300,
+          "loss": 9.9452,
+          "learning_rate": 3.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 400,
+          "loss": 9.449,
+          "learning_rate": 4.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 500,
+          "loss": 8.8455,
+          "learning_rate": 6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 600,
+          "loss": 8.1482,
+          "learning_rate": 7.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 700,
+          "loss": 7.4303,
+          "learning_rate": 8.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 800,
+          "loss": 7.0363,
+          "learning_rate": 9.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 900,
+          "loss": 6.9702,
+          "learning_rate": 0.000108,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1000,
+          "loss": 6.8975,
+          "learning_rate": 0.00012,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1100,
+          "loss": 6.892,
+          "learning_rate": 0.000132,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1200,
+          "loss": 6.6684,
+          "learning_rate": 0.000144,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1300,
+          "loss": 6.4754,
+          "learning_rate": 0.000156,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1400,
+          "loss": 6.3649,
+          "learning_rate": 0.000168,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1500,
+          "loss": 6.2981,
+          "learning_rate": 0.00018,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1600,
+          "loss": 6.1551,
+          "learning_rate": 0.000192,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1700,
+          "loss": 5.9163,
+          "learning_rate": 0.000204,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [
+        {
+          "step": 1000,
+          "paloma": 9.54583880403771e+19
+        },
+        {
+          "step": 1755,
+          "paloma": 2.945795672816324e+21
+        }
+      ],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 0.0003,
+        "max_steps": 200000,
+        "batch_size": 4
+      }
+    },
+    {
+      "run_name": "pico-decoder-tiny-dolma29k-v1",
+      "log_file": "log_20250828_223436.log",
+      "training_metrics": [
+        {
+          "step": 0,
+          "loss": 10.9975,
+          "learning_rate": 0.0,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 100,
+          "loss": 10.9763,
+          "learning_rate": 1.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 200,
+          "loss": 10.79,
+          "learning_rate": 2.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 300,
+          "loss": 10.2971,
+          "learning_rate": 3.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 400,
+          "loss": 9.8307,
+          "learning_rate": 4.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 500,
+          "loss": 9.3733,
+          "learning_rate": 6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 600,
+          "loss": 8.891,
+          "learning_rate": 7.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 700,
+          "loss": 8.4162,
+          "learning_rate": 8.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 800,
+          "loss": 8.0678,
+          "learning_rate": 9.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 900,
+          "loss": 7.8578,
+          "learning_rate": 0.000108,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 0.0003,
+        "max_steps": 200000,
+        "batch_size": 1
+      }
+    },
+    {
+      "run_name": "pico-decoder-tiny-dolma29k-v1",
+      "log_file": "log_20250828_225300.log",
+      "training_metrics": [
+        {
+          "step": 1000,
+          "loss": 7.7657,
+          "learning_rate": 0.00012,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1100,
+          "loss": 7.6733,
+          "learning_rate": 0.000132,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1200,
+          "loss": 7.5969,
+          "learning_rate": 0.000144,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1300,
+          "loss": 7.4765,
+          "learning_rate": 0.000156,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1400,
+          "loss": 7.3686,
+          "learning_rate": 0.000168,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1500,
+          "loss": 7.3251,
+          "learning_rate": 0.00018,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1600,
+          "loss": 7.184,
+          "learning_rate": 0.000192,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1700,
+          "loss": 7.1116,
+          "learning_rate": 0.000204,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1800,
+          "loss": 7.0565,
+          "learning_rate": 0.000216,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1900,
+          "loss": 6.9964,
+          "learning_rate": 0.000228,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2000,
+          "loss": 6.969,
+          "learning_rate": 0.00024,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2100,
+          "loss": 6.884,
+          "learning_rate": 0.000252,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2200,
+          "loss": 6.8334,
+          "learning_rate": 0.000264,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2300,
+          "loss": 6.815,
+          "learning_rate": 0.000276,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2400,
+          "loss": 6.7519,
+          "learning_rate": 0.000288,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2500,
+          "loss": 6.6908,
+          "learning_rate": 0.0003,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2600,
+          "loss": 6.6351,
+          "learning_rate": 0.0003,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2700,
+          "loss": 6.5568,
+          "learning_rate": 0.0003,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2800,
+          "loss": 6.5799,
+          "learning_rate": 0.0003,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2900,
+          "loss": 6.5467,
+          "learning_rate": 0.000299,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3000,
+          "loss": 6.4865,
+          "learning_rate": 0.000299,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3100,
+          "loss": 6.4604,
+          "learning_rate": 0.000299,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3200,
+          "loss": 6.4205,
+          "learning_rate": 0.000299,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3300,
+          "loss": 6.4127,
+          "learning_rate": 0.000299,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3400,
+          "loss": 6.3692,
+          "learning_rate": 0.000299,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3500,
+          "loss": 6.3761,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3600,
+          "loss": 6.2796,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3700,
+          "loss": 6.2988,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3800,
+          "loss": 6.2673,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3900,
+          "loss": 6.2715,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4000,
+          "loss": 6.189,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4100,
+          "loss": 6.1832,
+          "learning_rate": 0.000298,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4200,
+          "loss": 6.1553,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4300,
+          "loss": 6.1629,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4400,
+          "loss": 6.1061,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4500,
+          "loss": 6.1601,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4600,
+          "loss": 6.0963,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4700,
+          "loss": 6.078,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4800,
+          "loss": 6.0835,
+          "learning_rate": 0.000297,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4900,
+          "loss": 6.0519,
+          "learning_rate": 0.000296,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5000,
+          "loss": 6.0661,
+          "learning_rate": 0.000296,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5100,
+          "loss": 6.0121,
+          "learning_rate": 0.000296,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5200,
+          "loss": 6.0544,
+          "learning_rate": 0.000296,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5300,
+          "loss": 6.0224,
+          "learning_rate": 0.000296,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5400,
+          "loss": 5.9831,
+          "learning_rate": 0.000296,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5500,
+          "loss": 5.9553,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5600,
+          "loss": 5.9493,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5700,
+          "loss": 5.9943,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5800,
+          "loss": 5.963,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5900,
+          "loss": 5.9349,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6000,
+          "loss": 5.9087,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6100,
+          "loss": 5.8818,
+          "learning_rate": 0.000295,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6200,
+          "loss": 5.8535,
+          "learning_rate": 0.000294,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6300,
+          "loss": 5.8896,
+          "learning_rate": 0.000294,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6400,
+          "loss": 5.9007,
+          "learning_rate": 0.000294,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6500,
+          "loss": 5.8617,
+          "learning_rate": 0.000294,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6600,
+          "loss": 5.8201,
+          "learning_rate": 0.000294,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6700,
+          "loss": 5.8544,
+          "learning_rate": 0.000294,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6800,
+          "loss": 5.8532,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6900,
+          "loss": 5.795,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7000,
+          "loss": 5.8146,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7100,
+          "loss": 5.793,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7200,
+          "loss": 5.7827,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7300,
+          "loss": 5.7816,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7400,
+          "loss": 5.73,
+          "learning_rate": 0.000293,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7500,
+          "loss": 5.767,
+          "learning_rate": 0.000292,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7600,
+          "loss": 5.745,
+          "learning_rate": 0.000292,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7700,
+          "loss": 5.7499,
+          "learning_rate": 0.000292,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7800,
+          "loss": 5.7233,
+          "learning_rate": 0.000292,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7900,
+          "loss": 5.7219,
+          "learning_rate": 0.000292,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8000,
+          "loss": 5.7523,
+          "learning_rate": 0.000292,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8100,
+          "loss": 5.7145,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8200,
+          "loss": 5.7469,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8300,
+          "loss": 5.7363,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8400,
+          "loss": 5.6938,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8500,
+          "loss": 5.6994,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8600,
+          "loss": 5.6583,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8700,
+          "loss": 5.6885,
+          "learning_rate": 0.000291,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8800,
+          "loss": 5.6313,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8900,
+          "loss": 5.6314,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9000,
+          "loss": 5.6501,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9100,
+          "loss": 5.6357,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9200,
+          "loss": 5.6045,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9300,
+          "loss": 5.6405,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9400,
+          "loss": 5.6241,
+          "learning_rate": 0.00029,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9500,
+          "loss": 5.6247,
+          "learning_rate": 0.000289,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9600,
+          "loss": 5.5983,
+          "learning_rate": 0.000289,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9700,
+          "loss": 5.5978,
+          "learning_rate": 0.000289,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9800,
+          "loss": 5.5746,
+          "learning_rate": 0.000289,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [
+        {
+          "step": 1000,
+          "paloma": 2.5468931158531133e+19
+        },
+        {
+          "step": 2000,
+          "paloma": 3.627192449295412e+21
+        },
+        {
+          "step": 3000,
+          "paloma": 9.90975658825673e+22
+        },
+        {
+          "step": 4000,
+          "paloma": 2.6252526658823776e+24
+        },
+        {
+          "step": 5000,
+          "paloma": 7.294956881845611e+25
+        },
+        {
+          "step": 6000,
+          "paloma": 1.6856570425562805e+27
+        },
+        {
+          "step": 7000,
+          "paloma": 9.22180682233585e+28
+        },
+        {
+          "step": 8000,
+          "paloma": 3.1300823362207656e+29
+        },
+        {
+          "step": 9000,
+          "paloma": 4.983924509492406e+30
+        }
+      ],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 0.0003,
+        "max_steps": 200000,
+        "batch_size": 1
+      }
+    },
+    {
+      "run_name": "pico-decoder-tiny-dolma29k-v2",
+      "log_file": "log_20250829_003838.log",
+      "training_metrics": [
+        {
+          "step": 0,
+          "loss": 10.9848,
+          "learning_rate": 0.0,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 50,
+          "loss": 11.0005,
+          "learning_rate": 1e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 100,
+          "loss": 10.9918,
+          "learning_rate": 2e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 150,
+          "loss": 10.9776,
+          "learning_rate": 3e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 200,
+          "loss": 10.9569,
+          "learning_rate": 4e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 250,
+          "loss": 10.9255,
+          "learning_rate": 5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 300,
+          "loss": 10.8883,
+          "learning_rate": 6e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 350,
+          "loss": 10.8249,
+          "learning_rate": 7e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 400,
+          "loss": 10.7344,
+          "learning_rate": 8e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 450,
+          "loss": 10.6177,
+          "learning_rate": 9e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 500,
+          "loss": 10.5025,
+          "learning_rate": 1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 550,
+          "loss": 10.3986,
+          "learning_rate": 1.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 600,
+          "loss": 10.3079,
+          "learning_rate": 1.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 650,
+          "loss": 10.2142,
+          "learning_rate": 1.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 700,
+          "loss": 10.1146,
+          "learning_rate": 1.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 750,
+          "loss": 10.0398,
+          "learning_rate": 1.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 800,
+          "loss": 9.9311,
+          "learning_rate": 1.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 850,
+          "loss": 9.8431,
+          "learning_rate": 1.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 900,
+          "loss": 9.7453,
+          "learning_rate": 1.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 950,
+          "loss": 9.6527,
+          "learning_rate": 1.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1000,
+          "loss": 9.5691,
+          "learning_rate": 2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1050,
+          "loss": 9.46,
+          "learning_rate": 2.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1100,
+          "loss": 9.3525,
+          "learning_rate": 2.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1150,
+          "loss": 9.2715,
+          "learning_rate": 2.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1200,
+          "loss": 9.1618,
+          "learning_rate": 2.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1250,
+          "loss": 9.0547,
+          "learning_rate": 2.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1300,
+          "loss": 8.955,
+          "learning_rate": 2.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1350,
+          "loss": 8.8251,
+          "learning_rate": 2.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1400,
+          "loss": 8.7711,
+          "learning_rate": 2.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1450,
+          "loss": 8.6834,
+          "learning_rate": 2.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1500,
+          "loss": 8.5638,
+          "learning_rate": 3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1550,
+          "loss": 8.4572,
+          "learning_rate": 3.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1600,
+          "loss": 8.394,
+          "learning_rate": 3.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1650,
+          "loss": 8.2973,
+          "learning_rate": 3.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1700,
+          "loss": 8.2264,
+          "learning_rate": 3.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1750,
+          "loss": 8.1672,
+          "learning_rate": 3.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1800,
+          "loss": 8.0695,
+          "learning_rate": 3.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1850,
+          "loss": 8.0299,
+          "learning_rate": 3.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1900,
+          "loss": 7.9883,
+          "learning_rate": 3.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1950,
+          "loss": 7.9429,
+          "learning_rate": 3.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2000,
+          "loss": 7.8447,
+          "learning_rate": 4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2050,
+          "loss": 7.838,
+          "learning_rate": 4.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2100,
+          "loss": 7.7671,
+          "learning_rate": 4.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2150,
+          "loss": 7.7637,
+          "learning_rate": 4.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2200,
+          "loss": 7.706,
+          "learning_rate": 4.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2250,
+          "loss": 7.7607,
+          "learning_rate": 4.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2300,
+          "loss": 7.7076,
+          "learning_rate": 4.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2350,
+          "loss": 7.6787,
+          "learning_rate": 4.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2400,
+          "loss": 7.6446,
+          "learning_rate": 4.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2450,
+          "loss": 7.5999,
+          "learning_rate": 4.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2500,
+          "loss": 7.6154,
+          "learning_rate": 5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2550,
+          "loss": 7.5627,
+          "learning_rate": 5.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2600,
+          "loss": 7.5747,
+          "learning_rate": 5.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2650,
+          "loss": 7.5358,
+          "learning_rate": 5.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2700,
+          "loss": 7.5148,
+          "learning_rate": 5.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2750,
+          "loss": 7.4874,
+          "learning_rate": 5.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2800,
+          "loss": 7.4438,
+          "learning_rate": 5.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2850,
+          "loss": 7.4772,
+          "learning_rate": 5.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2900,
+          "loss": 7.4135,
+          "learning_rate": 5.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2950,
+          "loss": 7.3929,
+          "learning_rate": 5.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3000,
+          "loss": 7.3566,
+          "learning_rate": 6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3050,
+          "loss": 7.3318,
+          "learning_rate": 6.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3100,
+          "loss": 7.3114,
+          "learning_rate": 6.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3150,
+          "loss": 7.2734,
+          "learning_rate": 6.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3200,
+          "loss": 7.322,
+          "learning_rate": 6.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3250,
+          "loss": 7.2621,
+          "learning_rate": 6.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3300,
+          "loss": 7.2257,
+          "learning_rate": 6.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3350,
+          "loss": 7.2447,
+          "learning_rate": 6.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3400,
+          "loss": 7.2344,
+          "learning_rate": 6.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3450,
+          "loss": 7.1488,
+          "learning_rate": 6.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3500,
+          "loss": 7.1797,
+          "learning_rate": 7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3550,
+          "loss": 7.1737,
+          "learning_rate": 7.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3600,
+          "loss": 7.1204,
+          "learning_rate": 7.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3650,
+          "loss": 7.1102,
+          "learning_rate": 7.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3700,
+          "loss": 7.0845,
+          "learning_rate": 7.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3750,
+          "loss": 7.0858,
+          "learning_rate": 7.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3800,
+          "loss": 7.0362,
+          "learning_rate": 7.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3850,
+          "loss": 7.0603,
+          "learning_rate": 7.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3900,
+          "loss": 7.0172,
+          "learning_rate": 7.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3950,
+          "loss": 6.9948,
+          "learning_rate": 7.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4000,
+          "loss": 6.9909,
+          "learning_rate": 8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4050,
+          "loss": 6.9477,
+          "learning_rate": 8.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4100,
+          "loss": 6.9651,
+          "learning_rate": 8.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4150,
+          "loss": 6.9149,
+          "learning_rate": 8.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4200,
+          "loss": 6.893,
+          "learning_rate": 8.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4250,
+          "loss": 6.9227,
+          "learning_rate": 8.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4300,
+          "loss": 6.879,
+          "learning_rate": 8.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4350,
+          "loss": 6.8649,
+          "learning_rate": 8.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4400,
+          "loss": 6.8305,
+          "learning_rate": 8.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4450,
+          "loss": 6.8085,
+          "learning_rate": 8.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4500,
+          "loss": 6.8315,
+          "learning_rate": 9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4550,
+          "loss": 6.7885,
+          "learning_rate": 9.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4600,
+          "loss": 6.7805,
+          "learning_rate": 9.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4650,
+          "loss": 6.7737,
+          "learning_rate": 9.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4700,
+          "loss": 6.7649,
+          "learning_rate": 9.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4750,
+          "loss": 6.7562,
+          "learning_rate": 9.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4800,
+          "loss": 6.7347,
+          "learning_rate": 9.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4850,
+          "loss": 6.7161,
+          "learning_rate": 9.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4900,
+          "loss": 6.6889,
+          "learning_rate": 9.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4950,
+          "loss": 6.7299,
+          "learning_rate": 9.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5000,
+          "loss": 6.6605,
+          "learning_rate": 0.0001,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5050,
+          "loss": 6.6552,
+          "learning_rate": 0.0001,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5100,
+          "loss": 6.7038,
+          "learning_rate": 9.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5150,
+          "loss": 6.6452,
+          "learning_rate": 9.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5200,
+          "loss": 6.6522,
+          "learning_rate": 9.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5250,
+          "loss": 6.627,
+          "learning_rate": 9.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5300,
+          "loss": 6.5733,
+          "learning_rate": 9.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5350,
+          "loss": 6.5833,
+          "learning_rate": 9.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5400,
+          "loss": 6.5854,
+          "learning_rate": 9.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5450,
+          "loss": 6.6012,
+          "learning_rate": 9.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5500,
+          "loss": 6.5786,
+          "learning_rate": 9.97e-05,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [
+        {
+          "step": 1000,
+          "paloma": 5.073320568651489e+18
+        },
+        {
+          "step": 2000,
+          "paloma": 1.8978577072995303e+19
+        },
+        {
+          "step": 3000,
+          "paloma": 3.1701596694317715e+19
+        },
+        {
+          "step": 4000,
+          "paloma": 2.5015965971757485e+20
+        },
+        {
+          "step": 5000,
+          "paloma": 2.38712860824014e+21
+        }
+      ],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 0.0001,
+        "max_steps": 200000,
+        "batch_size": 1
+      }
+    },
+    {
+      "run_name": "pico-decoder-tiny-dolma29k-v3",
+      "log_file": "log_20250829_014857.log",
+      "training_metrics": [
+        {
+          "step": 0,
+          "loss": 10.9975,
+          "learning_rate": 0.0,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 25,
+          "loss": 10.9972,
+          "learning_rate": 1.56e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 50,
+          "loss": 11.003,
+          "learning_rate": 3.13e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 75,
+          "loss": 11.0034,
+          "learning_rate": 4.69e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 100,
+          "loss": 10.9962,
+          "learning_rate": 6.25e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 125,
+          "loss": 10.9973,
+          "learning_rate": 7.81e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 150,
+          "loss": 10.9943,
+          "learning_rate": 9.38e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 175,
+          "loss": 10.986,
+          "learning_rate": 1.09e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 200,
+          "loss": 10.9885,
+          "learning_rate": 1.25e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 225,
+          "loss": 10.9816,
+          "learning_rate": 1.41e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 250,
+          "loss": 10.9786,
+          "learning_rate": 1.56e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 275,
+          "loss": 10.9707,
+          "learning_rate": 1.72e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 300,
+          "loss": 10.97,
+          "learning_rate": 1.88e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 325,
+          "loss": 10.9626,
+          "learning_rate": 2.03e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 350,
+          "loss": 10.958,
+          "learning_rate": 2.19e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 375,
+          "loss": 10.9486,
+          "learning_rate": 2.34e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 400,
+          "loss": 10.9417,
+          "learning_rate": 2.5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 425,
+          "loss": 10.9328,
+          "learning_rate": 2.66e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 450,
+          "loss": 10.9242,
+          "learning_rate": 2.81e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 475,
+          "loss": 10.917,
+          "learning_rate": 2.97e-06,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 5e-05,
+        "max_steps": 20000,
+        "batch_size": 1
+      }
+    },
+    {
+      "run_name": "pico-decoder-tiny-dolma29k-v3",
+      "log_file": "log_20250829_020629.log",
+      "training_metrics": [
+        {
+          "step": 500,
+          "loss": 10.8854,
+          "learning_rate": 3.13e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 525,
+          "loss": 10.889,
+          "learning_rate": 3.28e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 550,
+          "loss": 10.8846,
+          "learning_rate": 3.44e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 575,
+          "loss": 10.8657,
+          "learning_rate": 3.59e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 600,
+          "loss": 10.859,
+          "learning_rate": 3.75e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 625,
+          "loss": 10.8328,
+          "learning_rate": 3.91e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 650,
+          "loss": 10.8166,
+          "learning_rate": 4.06e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 675,
+          "loss": 10.7913,
+          "learning_rate": 4.22e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 700,
+          "loss": 10.7609,
+          "learning_rate": 4.37e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 725,
+          "loss": 10.7322,
+          "learning_rate": 4.53e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 750,
+          "loss": 10.7121,
+          "learning_rate": 4.69e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 775,
+          "loss": 10.6877,
+          "learning_rate": 4.84e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 800,
+          "loss": 10.6436,
+          "learning_rate": 5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 825,
+          "loss": 10.6256,
+          "learning_rate": 5.16e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 850,
+          "loss": 10.5961,
+          "learning_rate": 5.31e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 875,
+          "loss": 10.5443,
+          "learning_rate": 5.47e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 900,
+          "loss": 10.5197,
+          "learning_rate": 5.63e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 925,
+          "loss": 10.4854,
+          "learning_rate": 5.78e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 950,
+          "loss": 10.4826,
+          "learning_rate": 5.94e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 975,
+          "loss": 10.4557,
+          "learning_rate": 6.09e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1000,
+          "loss": 10.4142,
+          "learning_rate": 6.25e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1025,
+          "loss": 10.3885,
+          "learning_rate": 6.41e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1050,
+          "loss": 10.3737,
+          "learning_rate": 6.56e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1075,
+          "loss": 10.3534,
+          "learning_rate": 6.72e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1100,
+          "loss": 10.3219,
+          "learning_rate": 6.88e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1125,
+          "loss": 10.3064,
+          "learning_rate": 7.03e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1150,
+          "loss": 10.2761,
+          "learning_rate": 7.19e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1175,
+          "loss": 10.2592,
+          "learning_rate": 7.34e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1200,
+          "loss": 10.242,
+          "learning_rate": 7.5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1225,
+          "loss": 10.2141,
+          "learning_rate": 7.66e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1250,
+          "loss": 10.1882,
+          "learning_rate": 7.81e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1275,
+          "loss": 10.1608,
+          "learning_rate": 7.97e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1300,
+          "loss": 10.146,
+          "learning_rate": 8.13e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1325,
+          "loss": 10.0944,
+          "learning_rate": 8.28e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1350,
+          "loss": 10.0885,
+          "learning_rate": 8.44e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1375,
+          "loss": 10.0748,
+          "learning_rate": 8.59e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1400,
+          "loss": 10.0425,
+          "learning_rate": 8.75e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1425,
+          "loss": 10.0422,
+          "learning_rate": 8.91e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1450,
+          "loss": 10.0039,
+          "learning_rate": 9.06e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1475,
+          "loss": 9.9736,
+          "learning_rate": 9.22e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1500,
+          "loss": 9.9729,
+          "learning_rate": 9.38e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1525,
+          "loss": 9.9379,
+          "learning_rate": 9.53e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1550,
+          "loss": 9.8819,
+          "learning_rate": 9.69e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1575,
+          "loss": 9.8702,
+          "learning_rate": 9.84e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1600,
+          "loss": 9.8571,
+          "learning_rate": 1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1625,
+          "loss": 9.8356,
+          "learning_rate": 1.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1650,
+          "loss": 9.7973,
+          "learning_rate": 1.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1675,
+          "loss": 9.7745,
+          "learning_rate": 1.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1700,
+          "loss": 9.7673,
+          "learning_rate": 1.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1725,
+          "loss": 9.7406,
+          "learning_rate": 1.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1750,
+          "loss": 9.7312,
+          "learning_rate": 1.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1775,
+          "loss": 9.6563,
+          "learning_rate": 1.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1800,
+          "loss": 9.6515,
+          "learning_rate": 1.13e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1825,
+          "loss": 9.6241,
+          "learning_rate": 1.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1850,
+          "loss": 9.6015,
+          "learning_rate": 1.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1875,
+          "loss": 9.5933,
+          "learning_rate": 1.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1900,
+          "loss": 9.5544,
+          "learning_rate": 1.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1925,
+          "loss": 9.5407,
+          "learning_rate": 1.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1950,
+          "loss": 9.5431,
+          "learning_rate": 1.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 1975,
+          "loss": 9.4853,
+          "learning_rate": 1.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2000,
+          "loss": 9.4665,
+          "learning_rate": 1.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2025,
+          "loss": 9.4621,
+          "learning_rate": 1.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2050,
+          "loss": 9.4031,
+          "learning_rate": 1.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2075,
+          "loss": 9.3699,
+          "learning_rate": 1.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2100,
+          "loss": 9.3422,
+          "learning_rate": 1.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2125,
+          "loss": 9.3129,
+          "learning_rate": 1.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2150,
+          "loss": 9.2917,
+          "learning_rate": 1.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2175,
+          "loss": 9.267,
+          "learning_rate": 1.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2200,
+          "loss": 9.2512,
+          "learning_rate": 1.38e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2225,
+          "loss": 9.2737,
+          "learning_rate": 1.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2250,
+          "loss": 9.2357,
+          "learning_rate": 1.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2275,
+          "loss": 9.1471,
+          "learning_rate": 1.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2300,
+          "loss": 9.1305,
+          "learning_rate": 1.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2325,
+          "loss": 9.143,
+          "learning_rate": 1.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2350,
+          "loss": 9.0948,
+          "learning_rate": 1.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2375,
+          "loss": 9.0256,
+          "learning_rate": 1.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2400,
+          "loss": 9.0664,
+          "learning_rate": 1.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2425,
+          "loss": 9.002,
+          "learning_rate": 1.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2450,
+          "loss": 8.9518,
+          "learning_rate": 1.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2475,
+          "loss": 8.9717,
+          "learning_rate": 1.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2500,
+          "loss": 8.9536,
+          "learning_rate": 1.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2525,
+          "loss": 8.8812,
+          "learning_rate": 1.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2550,
+          "loss": 8.8824,
+          "learning_rate": 1.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2575,
+          "loss": 8.8564,
+          "learning_rate": 1.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2600,
+          "loss": 8.8419,
+          "learning_rate": 1.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2625,
+          "loss": 8.7865,
+          "learning_rate": 1.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2650,
+          "loss": 8.7493,
+          "learning_rate": 1.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2675,
+          "loss": 8.7255,
+          "learning_rate": 1.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2700,
+          "loss": 8.6469,
+          "learning_rate": 1.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2725,
+          "loss": 8.6799,
+          "learning_rate": 1.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2750,
+          "loss": 8.6974,
+          "learning_rate": 1.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2775,
+          "loss": 8.6441,
+          "learning_rate": 1.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2800,
+          "loss": 8.6689,
+          "learning_rate": 1.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2825,
+          "loss": 8.5732,
+          "learning_rate": 1.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2850,
+          "loss": 8.5955,
+          "learning_rate": 1.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2875,
+          "loss": 8.5823,
+          "learning_rate": 1.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2900,
+          "loss": 8.5968,
+          "learning_rate": 1.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2925,
+          "loss": 8.4721,
+          "learning_rate": 1.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2950,
+          "loss": 8.4672,
+          "learning_rate": 1.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 2975,
+          "loss": 8.4033,
+          "learning_rate": 1.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3000,
+          "loss": 8.4947,
+          "learning_rate": 1.88e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3025,
+          "loss": 8.378,
+          "learning_rate": 1.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3050,
+          "loss": 8.3581,
+          "learning_rate": 1.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3075,
+          "loss": 8.3341,
+          "learning_rate": 1.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3100,
+          "loss": 8.3391,
+          "learning_rate": 1.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3125,
+          "loss": 8.367,
+          "learning_rate": 1.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3150,
+          "loss": 8.237,
+          "learning_rate": 1.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3175,
+          "loss": 8.2879,
+          "learning_rate": 1.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3200,
+          "loss": 8.2706,
+          "learning_rate": 2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3225,
+          "loss": 8.1983,
+          "learning_rate": 2.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3250,
+          "loss": 8.2174,
+          "learning_rate": 2.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3275,
+          "loss": 8.2229,
+          "learning_rate": 2.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3300,
+          "loss": 8.1398,
+          "learning_rate": 2.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3325,
+          "loss": 8.143,
+          "learning_rate": 2.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3350,
+          "loss": 8.1471,
+          "learning_rate": 2.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3375,
+          "loss": 8.0908,
+          "learning_rate": 2.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3400,
+          "loss": 8.1165,
+          "learning_rate": 2.13e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3425,
+          "loss": 8.0957,
+          "learning_rate": 2.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3450,
+          "loss": 8.1115,
+          "learning_rate": 2.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3475,
+          "loss": 8.0623,
+          "learning_rate": 2.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3500,
+          "loss": 8.0527,
+          "learning_rate": 2.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3525,
+          "loss": 7.9975,
+          "learning_rate": 2.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3550,
+          "loss": 7.9881,
+          "learning_rate": 2.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3575,
+          "loss": 8.006,
+          "learning_rate": 2.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3600,
+          "loss": 7.9366,
+          "learning_rate": 2.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3625,
+          "loss": 8.0252,
+          "learning_rate": 2.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3650,
+          "loss": 7.916,
+          "learning_rate": 2.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3675,
+          "loss": 7.947,
+          "learning_rate": 2.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3700,
+          "loss": 7.8943,
+          "learning_rate": 2.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3725,
+          "loss": 7.8951,
+          "learning_rate": 2.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3750,
+          "loss": 7.9316,
+          "learning_rate": 2.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3775,
+          "loss": 7.9407,
+          "learning_rate": 2.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3800,
+          "loss": 7.9385,
+          "learning_rate": 2.38e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3825,
+          "loss": 7.88,
+          "learning_rate": 2.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3850,
+          "loss": 7.9207,
+          "learning_rate": 2.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3875,
+          "loss": 7.8258,
+          "learning_rate": 2.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3900,
+          "loss": 7.9005,
+          "learning_rate": 2.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3925,
+          "loss": 7.8232,
+          "learning_rate": 2.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3950,
+          "loss": 7.7847,
+          "learning_rate": 2.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 3975,
+          "loss": 7.7909,
+          "learning_rate": 2.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4000,
+          "loss": 7.7419,
+          "learning_rate": 2.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4025,
+          "loss": 7.8031,
+          "learning_rate": 2.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4050,
+          "loss": 7.7948,
+          "learning_rate": 2.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4075,
+          "loss": 7.7259,
+          "learning_rate": 2.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4100,
+          "loss": 7.8406,
+          "learning_rate": 2.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4125,
+          "loss": 7.7938,
+          "learning_rate": 2.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4150,
+          "loss": 7.7101,
+          "learning_rate": 2.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4175,
+          "loss": 7.6633,
+          "learning_rate": 2.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4200,
+          "loss": 7.683,
+          "learning_rate": 2.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4225,
+          "loss": 7.7106,
+          "learning_rate": 2.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4250,
+          "loss": 7.7174,
+          "learning_rate": 2.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4275,
+          "loss": 7.7508,
+          "learning_rate": 2.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4300,
+          "loss": 7.6831,
+          "learning_rate": 2.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4325,
+          "loss": 7.6498,
+          "learning_rate": 2.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4350,
+          "loss": 7.6668,
+          "learning_rate": 2.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4375,
+          "loss": 7.6852,
+          "learning_rate": 2.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4400,
+          "loss": 7.6469,
+          "learning_rate": 2.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4425,
+          "loss": 7.7448,
+          "learning_rate": 2.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4450,
+          "loss": 7.7422,
+          "learning_rate": 2.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4475,
+          "loss": 7.6918,
+          "learning_rate": 2.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4500,
+          "loss": 7.7084,
+          "learning_rate": 2.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4525,
+          "loss": 7.722,
+          "learning_rate": 2.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4550,
+          "loss": 7.6893,
+          "learning_rate": 2.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4575,
+          "loss": 7.6454,
+          "learning_rate": 2.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4600,
+          "loss": 7.6298,
+          "learning_rate": 2.87e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4625,
+          "loss": 7.642,
+          "learning_rate": 2.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4650,
+          "loss": 7.6247,
+          "learning_rate": 2.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4675,
+          "loss": 7.6448,
+          "learning_rate": 2.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4700,
+          "loss": 7.6506,
+          "learning_rate": 2.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4725,
+          "loss": 7.6356,
+          "learning_rate": 2.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4750,
+          "loss": 7.6426,
+          "learning_rate": 2.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4775,
+          "loss": 7.6388,
+          "learning_rate": 2.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4800,
+          "loss": 7.5216,
+          "learning_rate": 3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4825,
+          "loss": 7.5367,
+          "learning_rate": 3.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4850,
+          "loss": 7.5084,
+          "learning_rate": 3.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4875,
+          "loss": 7.6092,
+          "learning_rate": 3.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4900,
+          "loss": 7.576,
+          "learning_rate": 3.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4925,
+          "loss": 7.5686,
+          "learning_rate": 3.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4950,
+          "loss": 7.5583,
+          "learning_rate": 3.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 4975,
+          "loss": 7.5818,
+          "learning_rate": 3.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5000,
+          "loss": 7.6004,
+          "learning_rate": 3.13e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5025,
+          "loss": 7.5371,
+          "learning_rate": 3.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5050,
+          "loss": 7.5179,
+          "learning_rate": 3.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5075,
+          "loss": 7.5255,
+          "learning_rate": 3.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5100,
+          "loss": 7.5155,
+          "learning_rate": 3.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5125,
+          "loss": 7.566,
+          "learning_rate": 3.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5150,
+          "loss": 7.4797,
+          "learning_rate": 3.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5175,
+          "loss": 7.6224,
+          "learning_rate": 3.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5200,
+          "loss": 7.4821,
+          "learning_rate": 3.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5225,
+          "loss": 7.4765,
+          "learning_rate": 3.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5250,
+          "loss": 7.468,
+          "learning_rate": 3.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5275,
+          "loss": 7.5165,
+          "learning_rate": 3.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5300,
+          "loss": 7.5334,
+          "learning_rate": 3.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5325,
+          "loss": 7.5053,
+          "learning_rate": 3.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5350,
+          "loss": 7.5115,
+          "learning_rate": 3.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5375,
+          "loss": 7.4736,
+          "learning_rate": 3.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5400,
+          "loss": 7.452,
+          "learning_rate": 3.38e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5425,
+          "loss": 7.4596,
+          "learning_rate": 3.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5450,
+          "loss": 7.4518,
+          "learning_rate": 3.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5475,
+          "loss": 7.4308,
+          "learning_rate": 3.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5500,
+          "loss": 7.4627,
+          "learning_rate": 3.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5525,
+          "loss": 7.4095,
+          "learning_rate": 3.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5550,
+          "loss": 7.4423,
+          "learning_rate": 3.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5575,
+          "loss": 7.46,
+          "learning_rate": 3.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5600,
+          "loss": 7.3457,
+          "learning_rate": 3.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5625,
+          "loss": 7.4838,
+          "learning_rate": 3.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5650,
+          "loss": 7.4556,
+          "learning_rate": 3.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5675,
+          "loss": 7.422,
+          "learning_rate": 3.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5700,
+          "loss": 7.4307,
+          "learning_rate": 3.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5725,
+          "loss": 7.3795,
+          "learning_rate": 3.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5750,
+          "loss": 7.3855,
+          "learning_rate": 3.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5775,
+          "loss": 7.3518,
+          "learning_rate": 3.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5800,
+          "loss": 7.3794,
+          "learning_rate": 3.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5825,
+          "loss": 7.3591,
+          "learning_rate": 3.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5850,
+          "loss": 7.3489,
+          "learning_rate": 3.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5875,
+          "loss": 7.4108,
+          "learning_rate": 3.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5900,
+          "loss": 7.358,
+          "learning_rate": 3.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5925,
+          "loss": 7.3131,
+          "learning_rate": 3.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5950,
+          "loss": 7.2905,
+          "learning_rate": 3.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 5975,
+          "loss": 7.3466,
+          "learning_rate": 3.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6000,
+          "loss": 7.3765,
+          "learning_rate": 3.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6025,
+          "loss": 7.287,
+          "learning_rate": 3.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6050,
+          "loss": 7.3333,
+          "learning_rate": 3.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6075,
+          "loss": 7.3098,
+          "learning_rate": 3.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6100,
+          "loss": 7.2594,
+          "learning_rate": 3.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6125,
+          "loss": 7.3327,
+          "learning_rate": 3.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6150,
+          "loss": 7.303,
+          "learning_rate": 3.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6175,
+          "loss": 7.2523,
+          "learning_rate": 3.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6200,
+          "loss": 7.2546,
+          "learning_rate": 3.87e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6225,
+          "loss": 7.3242,
+          "learning_rate": 3.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6250,
+          "loss": 7.2035,
+          "learning_rate": 3.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6275,
+          "loss": 7.2334,
+          "learning_rate": 3.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6300,
+          "loss": 7.2295,
+          "learning_rate": 3.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6325,
+          "loss": 7.3051,
+          "learning_rate": 3.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6350,
+          "loss": 7.3188,
+          "learning_rate": 3.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6375,
+          "loss": 7.3212,
+          "learning_rate": 3.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6400,
+          "loss": 7.2465,
+          "learning_rate": 4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6425,
+          "loss": 7.2081,
+          "learning_rate": 4.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6450,
+          "loss": 7.2852,
+          "learning_rate": 4.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6475,
+          "loss": 7.2074,
+          "learning_rate": 4.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6500,
+          "loss": 7.252,
+          "learning_rate": 4.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6525,
+          "loss": 7.2115,
+          "learning_rate": 4.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6550,
+          "loss": 7.2435,
+          "learning_rate": 4.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6575,
+          "loss": 7.1962,
+          "learning_rate": 4.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6600,
+          "loss": 7.1631,
+          "learning_rate": 4.12e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6625,
+          "loss": 7.2525,
+          "learning_rate": 4.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6650,
+          "loss": 7.2133,
+          "learning_rate": 4.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6675,
+          "loss": 7.2248,
+          "learning_rate": 4.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6700,
+          "loss": 7.1928,
+          "learning_rate": 4.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6725,
+          "loss": 7.1698,
+          "learning_rate": 4.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6750,
+          "loss": 7.3037,
+          "learning_rate": 4.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6775,
+          "loss": 7.2451,
+          "learning_rate": 4.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6800,
+          "loss": 7.1373,
+          "learning_rate": 4.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6825,
+          "loss": 7.139,
+          "learning_rate": 4.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6850,
+          "loss": 7.1296,
+          "learning_rate": 4.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6875,
+          "loss": 7.0961,
+          "learning_rate": 4.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6900,
+          "loss": 7.1408,
+          "learning_rate": 4.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6925,
+          "loss": 7.1852,
+          "learning_rate": 4.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6950,
+          "loss": 7.2067,
+          "learning_rate": 4.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 6975,
+          "loss": 7.0681,
+          "learning_rate": 4.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7000,
+          "loss": 7.1813,
+          "learning_rate": 4.37e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7025,
+          "loss": 7.1992,
+          "learning_rate": 4.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7050,
+          "loss": 7.1409,
+          "learning_rate": 4.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7075,
+          "loss": 7.1271,
+          "learning_rate": 4.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7100,
+          "loss": 7.172,
+          "learning_rate": 4.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7125,
+          "loss": 7.1515,
+          "learning_rate": 4.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7150,
+          "loss": 7.0898,
+          "learning_rate": 4.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7175,
+          "loss": 7.0996,
+          "learning_rate": 4.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7200,
+          "loss": 7.061,
+          "learning_rate": 4.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7225,
+          "loss": 7.1939,
+          "learning_rate": 4.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7250,
+          "loss": 7.0355,
+          "learning_rate": 4.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7275,
+          "loss": 7.0935,
+          "learning_rate": 4.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7300,
+          "loss": 7.0689,
+          "learning_rate": 4.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7325,
+          "loss": 7.0265,
+          "learning_rate": 4.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7350,
+          "loss": 7.0963,
+          "learning_rate": 4.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7375,
+          "loss": 7.1138,
+          "learning_rate": 4.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7400,
+          "loss": 7.0414,
+          "learning_rate": 4.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7425,
+          "loss": 7.0753,
+          "learning_rate": 4.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7450,
+          "loss": 7.0603,
+          "learning_rate": 4.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7475,
+          "loss": 7.0818,
+          "learning_rate": 4.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7500,
+          "loss": 7.0788,
+          "learning_rate": 4.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7525,
+          "loss": 6.9952,
+          "learning_rate": 4.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7550,
+          "loss": 7.0114,
+          "learning_rate": 4.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7575,
+          "loss": 7.0611,
+          "learning_rate": 4.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7600,
+          "loss": 7.0057,
+          "learning_rate": 4.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7625,
+          "loss": 7.0182,
+          "learning_rate": 4.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7650,
+          "loss": 7.0271,
+          "learning_rate": 4.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7675,
+          "loss": 7.0817,
+          "learning_rate": 4.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7700,
+          "loss": 7.0859,
+          "learning_rate": 4.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7725,
+          "loss": 6.9859,
+          "learning_rate": 4.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7750,
+          "loss": 7.038,
+          "learning_rate": 4.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7775,
+          "loss": 6.9784,
+          "learning_rate": 4.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7800,
+          "loss": 7.0304,
+          "learning_rate": 4.87e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7825,
+          "loss": 7.0,
+          "learning_rate": 4.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7850,
+          "loss": 7.0159,
+          "learning_rate": 4.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7875,
+          "loss": 6.9859,
+          "learning_rate": 4.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7900,
+          "loss": 6.9348,
+          "learning_rate": 4.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7925,
+          "loss": 6.9541,
+          "learning_rate": 4.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7950,
+          "loss": 6.9342,
+          "learning_rate": 4.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 7975,
+          "loss": 7.0294,
+          "learning_rate": 4.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8000,
+          "loss": 7.0412,
+          "learning_rate": 5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8025,
+          "loss": 6.9111,
+          "learning_rate": 4.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8050,
+          "loss": 7.0142,
+          "learning_rate": 4.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8075,
+          "loss": 6.9201,
+          "learning_rate": 4.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8100,
+          "loss": 6.91,
+          "learning_rate": 4.96e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8125,
+          "loss": 6.9728,
+          "learning_rate": 4.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8150,
+          "loss": 6.9963,
+          "learning_rate": 4.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8175,
+          "loss": 7.0077,
+          "learning_rate": 4.93e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8200,
+          "loss": 6.8808,
+          "learning_rate": 4.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8225,
+          "loss": 6.85,
+          "learning_rate": 4.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8250,
+          "loss": 6.9328,
+          "learning_rate": 4.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8275,
+          "loss": 6.8971,
+          "learning_rate": 4.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8300,
+          "loss": 6.9635,
+          "learning_rate": 4.87e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8325,
+          "loss": 6.8937,
+          "learning_rate": 4.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8350,
+          "loss": 6.8578,
+          "learning_rate": 4.85e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8375,
+          "loss": 6.9492,
+          "learning_rate": 4.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8400,
+          "loss": 6.8896,
+          "learning_rate": 4.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8425,
+          "loss": 6.9677,
+          "learning_rate": 4.82e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8450,
+          "loss": 6.9071,
+          "learning_rate": 4.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8475,
+          "loss": 6.8973,
+          "learning_rate": 4.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8500,
+          "loss": 6.9139,
+          "learning_rate": 4.79e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8525,
+          "loss": 6.8983,
+          "learning_rate": 4.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8550,
+          "loss": 6.8446,
+          "learning_rate": 4.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8575,
+          "loss": 6.8246,
+          "learning_rate": 4.76e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8600,
+          "loss": 6.9637,
+          "learning_rate": 4.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8625,
+          "loss": 6.8827,
+          "learning_rate": 4.74e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8650,
+          "loss": 6.8234,
+          "learning_rate": 4.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8675,
+          "loss": 6.827,
+          "learning_rate": 4.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8700,
+          "loss": 6.9554,
+          "learning_rate": 4.71e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8725,
+          "loss": 6.8406,
+          "learning_rate": 4.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8750,
+          "loss": 6.8328,
+          "learning_rate": 4.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8775,
+          "loss": 6.8362,
+          "learning_rate": 4.68e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8800,
+          "loss": 6.8417,
+          "learning_rate": 4.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8825,
+          "loss": 6.8248,
+          "learning_rate": 4.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8850,
+          "loss": 6.7996,
+          "learning_rate": 4.65e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8875,
+          "loss": 6.7804,
+          "learning_rate": 4.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8900,
+          "loss": 6.8802,
+          "learning_rate": 4.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8925,
+          "loss": 6.8586,
+          "learning_rate": 4.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8950,
+          "loss": 6.8489,
+          "learning_rate": 4.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 8975,
+          "loss": 6.8592,
+          "learning_rate": 4.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9000,
+          "loss": 6.8302,
+          "learning_rate": 4.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9025,
+          "loss": 6.831,
+          "learning_rate": 4.57e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9050,
+          "loss": 6.7991,
+          "learning_rate": 4.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9075,
+          "loss": 6.8311,
+          "learning_rate": 4.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9100,
+          "loss": 6.7647,
+          "learning_rate": 4.54e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9125,
+          "loss": 6.8225,
+          "learning_rate": 4.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9150,
+          "loss": 6.7571,
+          "learning_rate": 4.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9175,
+          "loss": 6.806,
+          "learning_rate": 4.51e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9200,
+          "loss": 6.8348,
+          "learning_rate": 4.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9225,
+          "loss": 6.9131,
+          "learning_rate": 4.49e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9250,
+          "loss": 6.7801,
+          "learning_rate": 4.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9275,
+          "loss": 6.7776,
+          "learning_rate": 4.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9300,
+          "loss": 6.716,
+          "learning_rate": 4.46e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9325,
+          "loss": 6.8958,
+          "learning_rate": 4.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9350,
+          "loss": 6.8734,
+          "learning_rate": 4.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9375,
+          "loss": 6.7203,
+          "learning_rate": 4.43e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9400,
+          "loss": 6.7133,
+          "learning_rate": 4.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9425,
+          "loss": 6.8392,
+          "learning_rate": 4.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9450,
+          "loss": 6.7945,
+          "learning_rate": 4.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9475,
+          "loss": 6.7831,
+          "learning_rate": 4.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9500,
+          "loss": 6.7336,
+          "learning_rate": 4.37e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9525,
+          "loss": 6.7529,
+          "learning_rate": 4.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9550,
+          "loss": 6.6838,
+          "learning_rate": 4.35e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9575,
+          "loss": 6.7548,
+          "learning_rate": 4.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9600,
+          "loss": 6.8837,
+          "learning_rate": 4.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9625,
+          "loss": 6.8271,
+          "learning_rate": 4.32e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9650,
+          "loss": 6.7446,
+          "learning_rate": 4.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9675,
+          "loss": 6.6811,
+          "learning_rate": 4.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9700,
+          "loss": 6.7641,
+          "learning_rate": 4.29e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9725,
+          "loss": 6.6779,
+          "learning_rate": 4.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9750,
+          "loss": 6.7428,
+          "learning_rate": 4.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9775,
+          "loss": 6.7698,
+          "learning_rate": 4.26e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9800,
+          "loss": 6.7282,
+          "learning_rate": 4.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9825,
+          "loss": 6.7314,
+          "learning_rate": 4.24e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9850,
+          "loss": 6.7281,
+          "learning_rate": 4.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9875,
+          "loss": 6.8553,
+          "learning_rate": 4.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9900,
+          "loss": 6.7912,
+          "learning_rate": 4.21e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9925,
+          "loss": 6.7301,
+          "learning_rate": 4.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9950,
+          "loss": 6.7467,
+          "learning_rate": 4.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 9975,
+          "loss": 6.6581,
+          "learning_rate": 4.18e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10000,
+          "loss": 6.7114,
+          "learning_rate": 4.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10025,
+          "loss": 6.7754,
+          "learning_rate": 4.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10050,
+          "loss": 6.695,
+          "learning_rate": 4.15e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10075,
+          "loss": 6.6791,
+          "learning_rate": 4.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10100,
+          "loss": 6.6957,
+          "learning_rate": 4.12e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10125,
+          "loss": 6.7073,
+          "learning_rate": 4.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10150,
+          "loss": 6.774,
+          "learning_rate": 4.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10175,
+          "loss": 6.8045,
+          "learning_rate": 4.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10200,
+          "loss": 6.761,
+          "learning_rate": 4.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10225,
+          "loss": 6.6995,
+          "learning_rate": 4.07e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10250,
+          "loss": 6.6779,
+          "learning_rate": 4.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10275,
+          "loss": 6.7462,
+          "learning_rate": 4.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10300,
+          "loss": 6.7099,
+          "learning_rate": 4.04e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10325,
+          "loss": 6.7013,
+          "learning_rate": 4.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10350,
+          "loss": 6.7173,
+          "learning_rate": 4.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10375,
+          "loss": 6.6967,
+          "learning_rate": 4.01e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10400,
+          "loss": 6.7565,
+          "learning_rate": 4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10425,
+          "loss": 6.7468,
+          "learning_rate": 3.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10450,
+          "loss": 6.7132,
+          "learning_rate": 3.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10475,
+          "loss": 6.6358,
+          "learning_rate": 3.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10500,
+          "loss": 6.6979,
+          "learning_rate": 3.96e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10525,
+          "loss": 6.6512,
+          "learning_rate": 3.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10550,
+          "loss": 6.6045,
+          "learning_rate": 3.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10575,
+          "loss": 6.6217,
+          "learning_rate": 3.93e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10600,
+          "loss": 6.7091,
+          "learning_rate": 3.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10625,
+          "loss": 6.618,
+          "learning_rate": 3.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10650,
+          "loss": 6.6743,
+          "learning_rate": 3.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10675,
+          "loss": 6.6481,
+          "learning_rate": 3.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10700,
+          "loss": 6.6888,
+          "learning_rate": 3.87e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10725,
+          "loss": 6.5786,
+          "learning_rate": 3.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10750,
+          "loss": 6.6917,
+          "learning_rate": 3.85e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10775,
+          "loss": 6.6487,
+          "learning_rate": 3.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10800,
+          "loss": 6.7293,
+          "learning_rate": 3.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10825,
+          "loss": 6.6369,
+          "learning_rate": 3.82e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10850,
+          "loss": 6.7118,
+          "learning_rate": 3.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10875,
+          "loss": 6.7235,
+          "learning_rate": 3.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10900,
+          "loss": 6.6963,
+          "learning_rate": 3.79e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10925,
+          "loss": 6.6791,
+          "learning_rate": 3.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10950,
+          "loss": 6.6773,
+          "learning_rate": 3.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 10975,
+          "loss": 6.6819,
+          "learning_rate": 3.76e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11000,
+          "loss": 6.6167,
+          "learning_rate": 3.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11025,
+          "loss": 6.6727,
+          "learning_rate": 3.74e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11050,
+          "loss": 6.6317,
+          "learning_rate": 3.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11075,
+          "loss": 6.6432,
+          "learning_rate": 3.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11100,
+          "loss": 6.6468,
+          "learning_rate": 3.71e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11125,
+          "loss": 6.646,
+          "learning_rate": 3.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11150,
+          "loss": 6.6852,
+          "learning_rate": 3.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11175,
+          "loss": 6.5716,
+          "learning_rate": 3.68e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11200,
+          "loss": 6.6311,
+          "learning_rate": 3.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11225,
+          "loss": 6.648,
+          "learning_rate": 3.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11250,
+          "loss": 6.6204,
+          "learning_rate": 3.65e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11275,
+          "loss": 6.6551,
+          "learning_rate": 3.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11300,
+          "loss": 6.6013,
+          "learning_rate": 3.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11325,
+          "loss": 6.6478,
+          "learning_rate": 3.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11350,
+          "loss": 6.6938,
+          "learning_rate": 3.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11375,
+          "loss": 6.6124,
+          "learning_rate": 3.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11400,
+          "loss": 6.6781,
+          "learning_rate": 3.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11425,
+          "loss": 6.6317,
+          "learning_rate": 3.57e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11450,
+          "loss": 6.6195,
+          "learning_rate": 3.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11475,
+          "loss": 6.5941,
+          "learning_rate": 3.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11500,
+          "loss": 6.5808,
+          "learning_rate": 3.54e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11525,
+          "loss": 6.6322,
+          "learning_rate": 3.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11550,
+          "loss": 6.6172,
+          "learning_rate": 3.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11575,
+          "loss": 6.649,
+          "learning_rate": 3.51e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11600,
+          "loss": 6.605,
+          "learning_rate": 3.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11625,
+          "loss": 6.6184,
+          "learning_rate": 3.49e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11650,
+          "loss": 6.5597,
+          "learning_rate": 3.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11675,
+          "loss": 6.6285,
+          "learning_rate": 3.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11700,
+          "loss": 6.5209,
+          "learning_rate": 3.46e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11725,
+          "loss": 6.5505,
+          "learning_rate": 3.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11750,
+          "loss": 6.671,
+          "learning_rate": 3.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11775,
+          "loss": 6.6403,
+          "learning_rate": 3.43e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11800,
+          "loss": 6.5738,
+          "learning_rate": 3.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11825,
+          "loss": 6.608,
+          "learning_rate": 3.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11850,
+          "loss": 6.6406,
+          "learning_rate": 3.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11875,
+          "loss": 6.6299,
+          "learning_rate": 3.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11900,
+          "loss": 6.5781,
+          "learning_rate": 3.38e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11925,
+          "loss": 6.5003,
+          "learning_rate": 3.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11950,
+          "loss": 6.635,
+          "learning_rate": 3.35e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 11975,
+          "loss": 6.618,
+          "learning_rate": 3.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12000,
+          "loss": 6.6603,
+          "learning_rate": 3.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12025,
+          "loss": 6.5507,
+          "learning_rate": 3.32e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12050,
+          "loss": 6.5878,
+          "learning_rate": 3.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12075,
+          "loss": 6.5245,
+          "learning_rate": 3.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12100,
+          "loss": 6.5629,
+          "learning_rate": 3.29e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12125,
+          "loss": 6.6181,
+          "learning_rate": 3.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12150,
+          "loss": 6.578,
+          "learning_rate": 3.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12175,
+          "loss": 6.5753,
+          "learning_rate": 3.26e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12200,
+          "loss": 6.6071,
+          "learning_rate": 3.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12225,
+          "loss": 6.5885,
+          "learning_rate": 3.24e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12250,
+          "loss": 6.5413,
+          "learning_rate": 3.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12275,
+          "loss": 6.6635,
+          "learning_rate": 3.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12300,
+          "loss": 6.6304,
+          "learning_rate": 3.21e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12325,
+          "loss": 6.5078,
+          "learning_rate": 3.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12350,
+          "loss": 6.5712,
+          "learning_rate": 3.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12375,
+          "loss": 6.6284,
+          "learning_rate": 3.18e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12400,
+          "loss": 6.5837,
+          "learning_rate": 3.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12425,
+          "loss": 6.5354,
+          "learning_rate": 3.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12450,
+          "loss": 6.6125,
+          "learning_rate": 3.15e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12475,
+          "loss": 6.5477,
+          "learning_rate": 3.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12500,
+          "loss": 6.5827,
+          "learning_rate": 3.13e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12525,
+          "loss": 6.5874,
+          "learning_rate": 3.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12550,
+          "loss": 6.5437,
+          "learning_rate": 3.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12575,
+          "loss": 6.582,
+          "learning_rate": 3.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12600,
+          "loss": 6.5286,
+          "learning_rate": 3.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12625,
+          "loss": 6.5144,
+          "learning_rate": 3.07e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12650,
+          "loss": 6.5327,
+          "learning_rate": 3.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12675,
+          "loss": 6.6058,
+          "learning_rate": 3.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12700,
+          "loss": 6.5626,
+          "learning_rate": 3.04e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12725,
+          "loss": 6.4589,
+          "learning_rate": 3.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12750,
+          "loss": 6.5629,
+          "learning_rate": 3.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12775,
+          "loss": 6.4815,
+          "learning_rate": 3.01e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12800,
+          "loss": 6.5651,
+          "learning_rate": 3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12825,
+          "loss": 6.6164,
+          "learning_rate": 2.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12850,
+          "loss": 6.6102,
+          "learning_rate": 2.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12875,
+          "loss": 6.4871,
+          "learning_rate": 2.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12900,
+          "loss": 6.49,
+          "learning_rate": 2.96e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12925,
+          "loss": 6.6028,
+          "learning_rate": 2.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12950,
+          "loss": 6.5509,
+          "learning_rate": 2.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 12975,
+          "loss": 6.5454,
+          "learning_rate": 2.93e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13000,
+          "loss": 6.5587,
+          "learning_rate": 2.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13025,
+          "loss": 6.5862,
+          "learning_rate": 2.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13050,
+          "loss": 6.5668,
+          "learning_rate": 2.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13075,
+          "loss": 6.522,
+          "learning_rate": 2.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13100,
+          "loss": 6.5044,
+          "learning_rate": 2.87e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13125,
+          "loss": 6.6356,
+          "learning_rate": 2.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13150,
+          "loss": 6.4772,
+          "learning_rate": 2.85e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13175,
+          "loss": 6.5504,
+          "learning_rate": 2.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13200,
+          "loss": 6.5415,
+          "learning_rate": 2.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13225,
+          "loss": 6.4651,
+          "learning_rate": 2.82e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13250,
+          "loss": 6.5536,
+          "learning_rate": 2.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13275,
+          "loss": 6.4861,
+          "learning_rate": 2.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13300,
+          "loss": 6.4688,
+          "learning_rate": 2.79e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13325,
+          "loss": 6.5549,
+          "learning_rate": 2.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13350,
+          "loss": 6.4589,
+          "learning_rate": 2.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13375,
+          "loss": 6.4644,
+          "learning_rate": 2.76e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13400,
+          "loss": 6.5937,
+          "learning_rate": 2.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13425,
+          "loss": 6.5798,
+          "learning_rate": 2.74e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13450,
+          "loss": 6.4615,
+          "learning_rate": 2.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13475,
+          "loss": 6.5173,
+          "learning_rate": 2.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13500,
+          "loss": 6.4795,
+          "learning_rate": 2.71e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13525,
+          "loss": 6.4789,
+          "learning_rate": 2.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13550,
+          "loss": 6.4835,
+          "learning_rate": 2.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13575,
+          "loss": 6.5405,
+          "learning_rate": 2.68e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13600,
+          "loss": 6.4616,
+          "learning_rate": 2.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13625,
+          "loss": 6.4578,
+          "learning_rate": 2.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13650,
+          "loss": 6.4083,
+          "learning_rate": 2.65e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13675,
+          "loss": 6.561,
+          "learning_rate": 2.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13700,
+          "loss": 6.5432,
+          "learning_rate": 2.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13725,
+          "loss": 6.5119,
+          "learning_rate": 2.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13750,
+          "loss": 6.454,
+          "learning_rate": 2.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13775,
+          "loss": 6.44,
+          "learning_rate": 2.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13800,
+          "loss": 6.4767,
+          "learning_rate": 2.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13825,
+          "loss": 6.4765,
+          "learning_rate": 2.57e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13850,
+          "loss": 6.5018,
+          "learning_rate": 2.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13875,
+          "loss": 6.5011,
+          "learning_rate": 2.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13900,
+          "loss": 6.4283,
+          "learning_rate": 2.54e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13925,
+          "loss": 6.519,
+          "learning_rate": 2.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13950,
+          "loss": 6.4388,
+          "learning_rate": 2.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 13975,
+          "loss": 6.455,
+          "learning_rate": 2.51e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14000,
+          "loss": 6.3491,
+          "learning_rate": 2.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14025,
+          "loss": 6.5285,
+          "learning_rate": 2.49e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14050,
+          "loss": 6.5082,
+          "learning_rate": 2.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14075,
+          "loss": 6.5451,
+          "learning_rate": 2.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14100,
+          "loss": 6.4753,
+          "learning_rate": 2.46e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14125,
+          "loss": 6.6011,
+          "learning_rate": 2.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14150,
+          "loss": 6.4885,
+          "learning_rate": 2.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14175,
+          "loss": 6.4635,
+          "learning_rate": 2.43e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14200,
+          "loss": 6.5519,
+          "learning_rate": 2.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14225,
+          "loss": 6.4356,
+          "learning_rate": 2.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14250,
+          "loss": 6.4552,
+          "learning_rate": 2.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14275,
+          "loss": 6.4613,
+          "learning_rate": 2.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14300,
+          "loss": 6.4411,
+          "learning_rate": 2.38e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14325,
+          "loss": 6.557,
+          "learning_rate": 2.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14350,
+          "loss": 6.4476,
+          "learning_rate": 2.35e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14375,
+          "loss": 6.5895,
+          "learning_rate": 2.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14400,
+          "loss": 6.4836,
+          "learning_rate": 2.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14425,
+          "loss": 6.4175,
+          "learning_rate": 2.32e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14450,
+          "loss": 6.4971,
+          "learning_rate": 2.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14475,
+          "loss": 6.4897,
+          "learning_rate": 2.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14500,
+          "loss": 6.455,
+          "learning_rate": 2.29e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14525,
+          "loss": 6.4688,
+          "learning_rate": 2.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14550,
+          "loss": 6.5494,
+          "learning_rate": 2.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14575,
+          "loss": 6.4501,
+          "learning_rate": 2.26e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14600,
+          "loss": 6.5142,
+          "learning_rate": 2.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14625,
+          "loss": 6.4891,
+          "learning_rate": 2.24e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14650,
+          "loss": 6.4274,
+          "learning_rate": 2.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14675,
+          "loss": 6.5277,
+          "learning_rate": 2.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14700,
+          "loss": 6.4472,
+          "learning_rate": 2.21e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14725,
+          "loss": 6.4328,
+          "learning_rate": 2.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14750,
+          "loss": 6.4928,
+          "learning_rate": 2.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14775,
+          "loss": 6.552,
+          "learning_rate": 2.18e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14800,
+          "loss": 6.5474,
+          "learning_rate": 2.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14825,
+          "loss": 6.4394,
+          "learning_rate": 2.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14850,
+          "loss": 6.5234,
+          "learning_rate": 2.15e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14875,
+          "loss": 6.4369,
+          "learning_rate": 2.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14900,
+          "loss": 6.4694,
+          "learning_rate": 2.13e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14925,
+          "loss": 6.5837,
+          "learning_rate": 2.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14950,
+          "loss": 6.4841,
+          "learning_rate": 2.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 14975,
+          "loss": 6.4347,
+          "learning_rate": 2.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15000,
+          "loss": 6.5816,
+          "learning_rate": 2.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15025,
+          "loss": 6.5337,
+          "learning_rate": 2.07e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15050,
+          "loss": 6.5131,
+          "learning_rate": 2.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15075,
+          "loss": 6.4669,
+          "learning_rate": 2.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15100,
+          "loss": 6.5141,
+          "learning_rate": 2.04e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15125,
+          "loss": 6.438,
+          "learning_rate": 2.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15150,
+          "loss": 6.4036,
+          "learning_rate": 2.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15175,
+          "loss": 6.4517,
+          "learning_rate": 2.01e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15200,
+          "loss": 6.477,
+          "learning_rate": 2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15225,
+          "loss": 6.4317,
+          "learning_rate": 1.99e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15250,
+          "loss": 6.488,
+          "learning_rate": 1.98e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15275,
+          "loss": 6.4466,
+          "learning_rate": 1.97e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15300,
+          "loss": 6.4248,
+          "learning_rate": 1.96e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15325,
+          "loss": 6.3834,
+          "learning_rate": 1.95e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15350,
+          "loss": 6.4272,
+          "learning_rate": 1.94e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15375,
+          "loss": 6.4834,
+          "learning_rate": 1.93e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15400,
+          "loss": 6.405,
+          "learning_rate": 1.92e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15425,
+          "loss": 6.4264,
+          "learning_rate": 1.91e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15450,
+          "loss": 6.4941,
+          "learning_rate": 1.9e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15475,
+          "loss": 6.4755,
+          "learning_rate": 1.89e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15500,
+          "loss": 6.5459,
+          "learning_rate": 1.88e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15525,
+          "loss": 6.3772,
+          "learning_rate": 1.86e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15550,
+          "loss": 6.443,
+          "learning_rate": 1.85e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15575,
+          "loss": 6.3931,
+          "learning_rate": 1.84e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15600,
+          "loss": 6.4087,
+          "learning_rate": 1.83e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15625,
+          "loss": 6.4743,
+          "learning_rate": 1.82e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15650,
+          "loss": 6.4575,
+          "learning_rate": 1.81e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15675,
+          "loss": 6.4971,
+          "learning_rate": 1.8e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15700,
+          "loss": 6.438,
+          "learning_rate": 1.79e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15725,
+          "loss": 6.5071,
+          "learning_rate": 1.78e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15750,
+          "loss": 6.391,
+          "learning_rate": 1.77e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15775,
+          "loss": 6.4386,
+          "learning_rate": 1.76e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15800,
+          "loss": 6.4268,
+          "learning_rate": 1.75e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15825,
+          "loss": 6.5534,
+          "learning_rate": 1.74e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15850,
+          "loss": 6.4422,
+          "learning_rate": 1.73e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15875,
+          "loss": 6.4075,
+          "learning_rate": 1.72e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15900,
+          "loss": 6.4458,
+          "learning_rate": 1.71e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15925,
+          "loss": 6.3855,
+          "learning_rate": 1.7e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15950,
+          "loss": 6.3659,
+          "learning_rate": 1.69e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 15975,
+          "loss": 6.5396,
+          "learning_rate": 1.68e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16000,
+          "loss": 6.4974,
+          "learning_rate": 1.67e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16025,
+          "loss": 6.4785,
+          "learning_rate": 1.66e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16050,
+          "loss": 6.4341,
+          "learning_rate": 1.65e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16075,
+          "loss": 6.3709,
+          "learning_rate": 1.64e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16100,
+          "loss": 6.3707,
+          "learning_rate": 1.63e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16125,
+          "loss": 6.4206,
+          "learning_rate": 1.61e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16150,
+          "loss": 6.397,
+          "learning_rate": 1.6e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16175,
+          "loss": 6.4617,
+          "learning_rate": 1.59e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16200,
+          "loss": 6.5586,
+          "learning_rate": 1.58e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16225,
+          "loss": 6.4248,
+          "learning_rate": 1.57e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16250,
+          "loss": 6.4204,
+          "learning_rate": 1.56e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16275,
+          "loss": 6.4632,
+          "learning_rate": 1.55e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16300,
+          "loss": 6.4491,
+          "learning_rate": 1.54e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16325,
+          "loss": 6.4412,
+          "learning_rate": 1.53e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16350,
+          "loss": 6.4144,
+          "learning_rate": 1.52e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16375,
+          "loss": 6.466,
+          "learning_rate": 1.51e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16400,
+          "loss": 6.4246,
+          "learning_rate": 1.5e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16425,
+          "loss": 6.4571,
+          "learning_rate": 1.49e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16450,
+          "loss": 6.3903,
+          "learning_rate": 1.48e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16475,
+          "loss": 6.4141,
+          "learning_rate": 1.47e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16500,
+          "loss": 6.4467,
+          "learning_rate": 1.46e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16525,
+          "loss": 6.356,
+          "learning_rate": 1.45e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16550,
+          "loss": 6.4049,
+          "learning_rate": 1.44e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16575,
+          "loss": 6.4103,
+          "learning_rate": 1.43e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16600,
+          "loss": 6.4282,
+          "learning_rate": 1.42e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16625,
+          "loss": 6.5397,
+          "learning_rate": 1.41e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16650,
+          "loss": 6.3862,
+          "learning_rate": 1.4e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16675,
+          "loss": 6.4291,
+          "learning_rate": 1.39e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16700,
+          "loss": 6.433,
+          "learning_rate": 1.38e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16725,
+          "loss": 6.3934,
+          "learning_rate": 1.36e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16750,
+          "loss": 6.4042,
+          "learning_rate": 1.35e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16775,
+          "loss": 6.4187,
+          "learning_rate": 1.34e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16800,
+          "loss": 6.4455,
+          "learning_rate": 1.33e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16825,
+          "loss": 6.424,
+          "learning_rate": 1.32e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16850,
+          "loss": 6.4491,
+          "learning_rate": 1.31e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16875,
+          "loss": 6.3993,
+          "learning_rate": 1.3e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16900,
+          "loss": 6.4393,
+          "learning_rate": 1.29e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16925,
+          "loss": 6.3705,
+          "learning_rate": 1.28e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16950,
+          "loss": 6.4404,
+          "learning_rate": 1.27e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 16975,
+          "loss": 6.4507,
+          "learning_rate": 1.26e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17000,
+          "loss": 6.3821,
+          "learning_rate": 1.25e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17025,
+          "loss": 6.4234,
+          "learning_rate": 1.24e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17050,
+          "loss": 6.4235,
+          "learning_rate": 1.23e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17075,
+          "loss": 6.4856,
+          "learning_rate": 1.22e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17100,
+          "loss": 6.4877,
+          "learning_rate": 1.21e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17125,
+          "loss": 6.3683,
+          "learning_rate": 1.2e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17150,
+          "loss": 6.4225,
+          "learning_rate": 1.19e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17175,
+          "loss": 6.2573,
+          "learning_rate": 1.18e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17200,
+          "loss": 6.3946,
+          "learning_rate": 1.17e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17225,
+          "loss": 6.4607,
+          "learning_rate": 1.16e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17250,
+          "loss": 6.4407,
+          "learning_rate": 1.15e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17275,
+          "loss": 6.4333,
+          "learning_rate": 1.14e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17300,
+          "loss": 6.3782,
+          "learning_rate": 1.13e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17325,
+          "loss": 6.3665,
+          "learning_rate": 1.11e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17350,
+          "loss": 6.4329,
+          "learning_rate": 1.1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17375,
+          "loss": 6.5107,
+          "learning_rate": 1.09e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17400,
+          "loss": 6.5076,
+          "learning_rate": 1.08e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17425,
+          "loss": 6.4936,
+          "learning_rate": 1.07e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17450,
+          "loss": 6.4119,
+          "learning_rate": 1.06e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17475,
+          "loss": 6.4032,
+          "learning_rate": 1.05e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17500,
+          "loss": 6.3962,
+          "learning_rate": 1.04e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17525,
+          "loss": 6.4288,
+          "learning_rate": 1.03e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17550,
+          "loss": 6.4021,
+          "learning_rate": 1.02e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17575,
+          "loss": 6.367,
+          "learning_rate": 1.01e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17600,
+          "loss": 6.3904,
+          "learning_rate": 1e-05,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17625,
+          "loss": 6.5059,
+          "learning_rate": 9.9e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17650,
+          "loss": 6.4225,
+          "learning_rate": 9.79e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17675,
+          "loss": 6.4422,
+          "learning_rate": 9.69e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17700,
+          "loss": 6.457,
+          "learning_rate": 9.58e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17725,
+          "loss": 6.4475,
+          "learning_rate": 9.48e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17750,
+          "loss": 6.3786,
+          "learning_rate": 9.38e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17775,
+          "loss": 6.4145,
+          "learning_rate": 9.27e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17800,
+          "loss": 6.3543,
+          "learning_rate": 9.17e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17825,
+          "loss": 6.5116,
+          "learning_rate": 9.06e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17850,
+          "loss": 6.4101,
+          "learning_rate": 8.96e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17875,
+          "loss": 6.4014,
+          "learning_rate": 8.85e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17900,
+          "loss": 6.4216,
+          "learning_rate": 8.75e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17925,
+          "loss": 6.4539,
+          "learning_rate": 8.65e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17950,
+          "loss": 6.4205,
+          "learning_rate": 8.54e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 17975,
+          "loss": 6.3865,
+          "learning_rate": 8.44e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18000,
+          "loss": 6.4347,
+          "learning_rate": 8.33e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18025,
+          "loss": 6.4313,
+          "learning_rate": 8.23e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18050,
+          "loss": 6.3868,
+          "learning_rate": 8.13e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18075,
+          "loss": 6.3703,
+          "learning_rate": 8.02e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18100,
+          "loss": 6.3747,
+          "learning_rate": 7.92e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18125,
+          "loss": 6.4228,
+          "learning_rate": 7.81e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18150,
+          "loss": 6.349,
+          "learning_rate": 7.71e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18175,
+          "loss": 6.4522,
+          "learning_rate": 7.6e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18200,
+          "loss": 6.3354,
+          "learning_rate": 7.5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18225,
+          "loss": 6.4663,
+          "learning_rate": 7.4e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18250,
+          "loss": 6.4155,
+          "learning_rate": 7.29e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18275,
+          "loss": 6.4584,
+          "learning_rate": 7.19e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18300,
+          "loss": 6.3637,
+          "learning_rate": 7.08e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18325,
+          "loss": 6.3583,
+          "learning_rate": 6.98e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18350,
+          "loss": 6.4469,
+          "learning_rate": 6.88e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18375,
+          "loss": 6.3768,
+          "learning_rate": 6.77e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18400,
+          "loss": 6.3179,
+          "learning_rate": 6.67e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18425,
+          "loss": 6.4046,
+          "learning_rate": 6.56e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18450,
+          "loss": 6.3435,
+          "learning_rate": 6.46e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18475,
+          "loss": 6.3454,
+          "learning_rate": 6.35e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18500,
+          "loss": 6.3922,
+          "learning_rate": 6.25e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18525,
+          "loss": 6.3459,
+          "learning_rate": 6.15e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18550,
+          "loss": 6.3591,
+          "learning_rate": 6.04e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18575,
+          "loss": 6.4337,
+          "learning_rate": 5.94e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18600,
+          "loss": 6.3962,
+          "learning_rate": 5.83e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18625,
+          "loss": 6.3425,
+          "learning_rate": 5.73e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18650,
+          "loss": 6.4022,
+          "learning_rate": 5.63e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18675,
+          "loss": 6.4513,
+          "learning_rate": 5.52e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18700,
+          "loss": 6.4284,
+          "learning_rate": 5.42e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18725,
+          "loss": 6.3879,
+          "learning_rate": 5.31e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18750,
+          "loss": 6.4009,
+          "learning_rate": 5.21e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18775,
+          "loss": 6.3713,
+          "learning_rate": 5.1e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18800,
+          "loss": 6.3752,
+          "learning_rate": 5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18825,
+          "loss": 6.4265,
+          "learning_rate": 4.9e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18850,
+          "loss": 6.3709,
+          "learning_rate": 4.79e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18875,
+          "loss": 6.3316,
+          "learning_rate": 4.69e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18900,
+          "loss": 6.4479,
+          "learning_rate": 4.58e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18925,
+          "loss": 6.4247,
+          "learning_rate": 4.48e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18950,
+          "loss": 6.4126,
+          "learning_rate": 4.37e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 18975,
+          "loss": 6.3489,
+          "learning_rate": 4.27e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19000,
+          "loss": 6.325,
+          "learning_rate": 4.17e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19025,
+          "loss": 6.3306,
+          "learning_rate": 4.06e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19050,
+          "loss": 6.387,
+          "learning_rate": 3.96e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19075,
+          "loss": 6.4133,
+          "learning_rate": 3.85e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19100,
+          "loss": 6.334,
+          "learning_rate": 3.75e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19125,
+          "loss": 6.3034,
+          "learning_rate": 3.65e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19150,
+          "loss": 6.4097,
+          "learning_rate": 3.54e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19175,
+          "loss": 6.442,
+          "learning_rate": 3.44e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19200,
+          "loss": 6.3756,
+          "learning_rate": 3.33e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19225,
+          "loss": 6.4037,
+          "learning_rate": 3.23e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19250,
+          "loss": 6.3974,
+          "learning_rate": 3.13e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19275,
+          "loss": 6.3933,
+          "learning_rate": 3.02e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19300,
+          "loss": 6.3269,
+          "learning_rate": 2.92e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19325,
+          "loss": 6.3907,
+          "learning_rate": 2.81e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19350,
+          "loss": 6.3955,
+          "learning_rate": 2.71e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19375,
+          "loss": 6.3972,
+          "learning_rate": 2.6e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19400,
+          "loss": 6.3896,
+          "learning_rate": 2.5e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19425,
+          "loss": 6.3425,
+          "learning_rate": 2.4e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19450,
+          "loss": 6.3587,
+          "learning_rate": 2.29e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19475,
+          "loss": 6.4179,
+          "learning_rate": 2.19e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19500,
+          "loss": 6.4192,
+          "learning_rate": 2.08e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19525,
+          "loss": 6.4252,
+          "learning_rate": 1.98e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19550,
+          "loss": 6.3349,
+          "learning_rate": 1.88e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19575,
+          "loss": 6.4042,
+          "learning_rate": 1.77e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19600,
+          "loss": 6.3567,
+          "learning_rate": 1.67e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19625,
+          "loss": 6.3912,
+          "learning_rate": 1.56e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19650,
+          "loss": 6.3113,
+          "learning_rate": 1.46e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19675,
+          "loss": 6.3756,
+          "learning_rate": 1.35e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19700,
+          "loss": 6.385,
+          "learning_rate": 1.25e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19725,
+          "loss": 6.3631,
+          "learning_rate": 1.15e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19750,
+          "loss": 6.4564,
+          "learning_rate": 1.04e-06,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19775,
+          "loss": 6.3258,
+          "learning_rate": 9.38e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19800,
+          "loss": 6.4682,
+          "learning_rate": 8.33e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19825,
+          "loss": 6.4421,
+          "learning_rate": 7.29e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19850,
+          "loss": 6.4342,
+          "learning_rate": 6.25e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19875,
+          "loss": 6.4182,
+          "learning_rate": 5.21e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19900,
+          "loss": 6.3203,
+          "learning_rate": 4.17e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19925,
+          "loss": 6.4339,
+          "learning_rate": 3.13e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19950,
+          "loss": 6.4095,
+          "learning_rate": 2.08e-07,
+          "inf_nan_count": 0
+        },
+        {
+          "step": 19975,
+          "loss": 6.4814,
+          "learning_rate": 1.04e-07,
+          "inf_nan_count": 0
+        }
+      ],
+      "evaluation_results": [
+        {
+          "step": 1000,
+          "paloma": 7.125172406420199e+27
+        },
+        {
+          "step": 1500,
+          "paloma": 6.5469212698356e+18
+        },
+        {
+          "step": 2000,
+          "paloma": 5.118641309912889e+18
+        },
+        {
+          "step": 2500,
+          "paloma": 3.37924315167126e+18
+        },
+        {
+          "step": 3000,
+          "paloma": 6.892747900243237e+18
+        },
+        {
+          "step": 3500,
+          "paloma": 2.0436832271954907e+19
+        },
+        {
+          "step": 4000,
+          "paloma": 4.1410268232311005e+19
+        },
+        {
+          "step": 4500,
+          "paloma": 3.4524340411684053e+19
+        },
+        {
+          "step": 5000,
+          "paloma": 2.320698426399461e+19
+        },
+        {
+          "step": 5500,
+          "paloma": 3.1834097890526753e+19
+        },
+        {
+          "step": 6000,
+          "paloma": 4.457139025979801e+19
+        },
+        {
+          "step": 6500,
+          "paloma": 7.3062353841856406e+19
+        },
+        {
+          "step": 7000,
+          "paloma": 1.2357969480287024e+20
+        },
+        {
+          "step": 7500,
+          "paloma": 2.7199371732053928e+20
+        },
+        {
+          "step": 8000,
+          "paloma": 7.181862506006892e+20
+        },
+        {
+          "step": 8500,
+          "paloma": 1.5123285241831744e+21
+        },
+        {
+          "step": 9000,
+          "paloma": 3.573074534351724e+21
+        },
+        {
+          "step": 9500,
+          "paloma": 7.403721262078652e+21
+        },
+        {
+          "step": 10000,
+          "paloma": 1.0650515380055143e+22
+        },
+        {
+          "step": 10500,
+          "paloma": 2.1077589258137904e+22
+        },
+        {
+          "step": 11000,
+          "paloma": 2.712416409262884e+22
+        },
+        {
+          "step": 11500,
+          "paloma": 4.877238989481918e+22
+        },
+        {
+          "step": 12000,
+          "paloma": 7.219509956260661e+22
+        },
+        {
+          "step": 12500,
+          "paloma": 1.1729325953411656e+23
+        },
+        {
+          "step": 13000,
+          "paloma": 1.729306754923583e+23
+        },
+        {
+          "step": 13500,
+          "paloma": 2.4018454768029128e+23
+        },
+        {
+          "step": 14000,
+          "paloma": 3.247328955167052e+23
+        },
+        {
+          "step": 14500,
+          "paloma": 4.43239578722337e+23
+        },
+        {
+          "step": 15000,
+          "paloma": 5.215164570276226e+23
+        },
+        {
+          "step": 15500,
+          "paloma": 6.102665947946271e+23
+        },
+        {
+          "step": 16000,
+          "paloma": 8.874629945146669e+23
+        },
+        {
+          "step": 16500,
+          "paloma": 9.981607121011733e+23
+        },
+        {
+          "step": 17000,
+          "paloma": 1.1075349421086151e+24
+        },
+        {
+          "step": 17500,
+          "paloma": 1.1064948792133394e+24
+        },
+        {
+          "step": 18000,
+          "paloma": 1.340918782615931e+24
+        },
+        {
+          "step": 18500,
+          "paloma": 1.4325241176004668e+24
+        },
+        {
+          "step": 19000,
+          "paloma": 1.5360601246943468e+24
+        },
+        {
+          "step": 19500,
+          "paloma": 1.6346615942991742e+24
+        },
+        {
+          "step": 20000,
+          "paloma": 1.645368302099182e+24
+        }
+      ],
+      "config": {
+        "d_model": 96,
+        "n_layers": 12,
+        "max_seq_len": 2048,
+        "vocab_size": 50304,
+        "lr": 5e-05,
+        "max_steps": 20000,
+        "batch_size": 1
+      }
+    }
+  ],
+  "summary": {
+    "total_runs": 7,
+    "run_names": [
+      "pico-decoder-tiny-dolma-teensy-v0",
+      "pico-decoder-tiny-dolma-teensy-v1",
+      "pico-decoder-tiny-dolma29k-v1",
+      "pico-decoder-tiny-dolma29k-v1",
+      "pico-decoder-tiny-dolma29k-v2",
+      "pico-decoder-tiny-dolma29k-v3",
+      "pico-decoder-tiny-dolma29k-v3"
+    ]
+  }
+}

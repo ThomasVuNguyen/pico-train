@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico Training Metrics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Pico Training Metrics Dashboard</h1>
+            <p>Real-time visualization of training progress across all model runs</p>
+        </header>
+
+        <div class="controls">
+            <div class="run-selector">
+                <label for="runSelect">Select Run:</label>
+                <select id="runSelect">
+                    <option value="all">All Runs</option>
+                </select>
+            </div>
+            <div class="metric-toggle">
+                <label>
+                    <input type="checkbox" id="showTraining" checked> Training Loss
+                </label>
+                <label>
+                    <input type="checkbox" id="showLearningRate" checked> Learning Rate
+                </label>
+                <label>
+                    <input type="checkbox" id="showEvaluation" checked> Paloma Evaluation
+                </label>
+            </div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-card">
+                <h3>📈 Training Loss Over Time</h3>
+                <canvas id="lossChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3>🎯 Learning Rate Schedule</h3>
+                <canvas id="lrChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3>📊 Paloma Evaluation Metrics</h3>
+                <canvas id="evalChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3>🔄 Combined View</h3>
+                <canvas id="combinedChart"></canvas>
+            </div>
+        </div>
+
+        <div class="run-summary">
+            <h3>📋 Run Summary</h3>
+            <div id="runSummary"></div>
+        </div>
+
+        <div class="config-details">
+            <h3>⚙️ Model Configuration</h3>
+            <div id="configDetails"></div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
