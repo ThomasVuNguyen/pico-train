@@ -31,9 +31,9 @@ monitoring:
 
 training:
   optimization:
-    lr: 1e-4  # Reduced from 3e-4 to prevent overfitting
+    lr: 0.0001  # Reduced from 3e-4 to prevent overfitting
     lr_warmup_steps: 5000  # Extended warmup for stability
-    lr_scheduler: "cosine"  # Smoother decay instead of linear
+    lr_scheduler: "linear_with_warmup"  # Supported scheduler with extended warmup
     weight_decay: 0.01  # Add weight decay for regularization
     max_grad_norm: 1.0  # Gradient clipping to prevent instability
     gradient_accumulation_steps: 2  # Reduced to work with larger batch size
