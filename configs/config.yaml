@@ -6,7 +6,7 @@
 # export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 checkpointing:
-  run_name: "pico-decoder-tiny-dolma29k"
+  run_name: "pico-decoder-tiny-dolma29k-v2"
   save_to_hf: true
   hf_checkpoint:
     repo_id: "ThomasTheMaker/pico-decoder-tiny"
@@ -18,16 +18,25 @@ checkpointing:
 model:
     d_model: 96
     activation_hidden_dim: 384
+    dropout: 0.1  # Add dropout for regularization
+    attention_dropout: 0.1  # Add attention dropout
 
 monitoring:
   save_to_wandb: false
   wandb:
     project: "pico-decoder-tiny"
     entity: "boymyc"
+  logging:
+    log_every_n_steps: 50  # More frequent logging for better monitoring
 
 training:
   optimization:
-    gradient_accumulation_steps: 4  # Increased to maintain effective batch size
+    lr: 1e-4  # Reduced from 3e-4 to prevent overfitting
+    lr_warmup_steps: 5000  # Extended warmup for stability
+    lr_scheduler: "cosine"  # Smoother decay instead of linear
+    weight_decay: 0.01  # Add weight decay for regularization
+    max_grad_norm: 1.0  # Gradient clipping to prevent instability
+    gradient_accumulation_steps: 2  # Reduced to work with larger batch size
   
   fabric:
     num_nodes: 1
@@ -42,7 +51,7 @@ data:
   dataset:
     name: "pico-lm/pretokenized-dolma"
   dataloader:
-    batch_size: 4  # Must be >= gradient_accumulation_steps
+    batch_size: 8  # Increased from 4 for better training quality
   tokenizer:
     name: "allenai/OLMo-7B-0724-hf"
     vocab_size: 50304
