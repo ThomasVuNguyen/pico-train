@@ -33,7 +33,7 @@ monitoring:
     log_every_n_steps: 25  # Very frequent logging for quality monitoring
 
 training:
-  max_steps: 40000  # Longer training for better convergence
+  max_steps: 100000  # Longer training for better convergence
   optimization:
     lr: 0.00005  # Even lower learning rate for precision training
     lr_warmup_steps: 8000  # Extended warmup for stability
