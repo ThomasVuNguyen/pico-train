@@ -12,12 +12,17 @@ A beautiful, interactive web dashboard for visualizing training progress across 
 - **📱 Responsive Design**: Works on desktop and mobile devices
 - **⚙️ Run Comparison**: Compare different model configurations side-by-side
 
-## 🚀 Quick Start
+## �� Quick Start
 
-1. **View the Dashboard**: Open `index.html` in your web browser
-2. **Select Runs**: Use the dropdown to view specific runs or all runs together
-3. **Toggle Metrics**: Check/uncheck boxes to show/hide different metric types
-4. **Explore Charts**: Hover over data points for detailed information
+1. **Generate Data**: First, run the data generation script to parse your training logs:
+   ```bash
+   python scripts/generate_data.py
+   ```
+   
+2. **View the Dashboard**: Open `index.html` in your web browser
+3. **Select Runs**: Use the dropdown to view specific runs or all runs together
+4. **Toggle Metrics**: Check/uncheck boxes to show/hide different metric types
+5. **Explore Charts**: Hover over data points for detailed information
 
 ## 📁 Files
 
@@ -34,6 +39,16 @@ The dashboard automatically extracts training metrics from:
 - Paloma evaluation results
 - Model configuration parameters
 
+## 🔄 Updating Data
+
+To refresh the dashboard with new training data:
+1. **Run new training sessions** - logs will be saved to `runs/*/logs/`
+2. **Generate updated data.json**:
+   ```bash
+   python scripts/generate_data.py
+   ```
+3. **Refresh the dashboard** - new runs will appear automatically
+
 ## 🎨 Chart Types
 
 1. **Training Loss**: Line charts showing loss reduction over time
@@ -47,13 +62,6 @@ The dashboard automatically extracts training metrics from:
 - **Zoom In**: Use the chart zoom features to focus on specific training phases
 - **Export**: Right-click charts to save as images
 - **Mobile**: Dashboard is fully responsive for mobile devices
-
-## 🔄 Updating Data
-
-To refresh the dashboard with new training data:
-1. Run new training sessions
-2. The dashboard will automatically load the latest log files
-3. New runs will appear in the dropdown selector
 
 ## 🎯 Key Metrics Tracked
 
@@ -70,6 +78,12 @@ To refresh the dashboard with new training data:
 - **Responsive Layout**: Adapts to different screen sizes
 - **Interactive Elements**: Hover effects and smooth animations
 - **Professional Typography**: Easy-to-read fonts and spacing
+
+## 📚 Documentation
+
+For more details on generating the data.json file, see:
+- `scripts/README.md` - Complete script documentation
+- `scripts/generate_data.py` - The data generation script
 
 ---
 

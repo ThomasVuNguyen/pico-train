@@ -30,7 +30,18 @@ from typing import TYPE_CHECKING, Any, Dict, Optional, Tuple, Union
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.nn.attention import SDPBackend, sdpa_kernel
+
+# Handle PyTorch version compatibility for attention backend
+try:
+    from torch.nn.attention import SDPBackend, sdpa_kernel
+
+    HAS_TORCH_ATTENTION = True
+except ImportError:
+    # Fallback for older PyTorch versions
+    HAS_TORCH_ATTENTION = False
+    SDPBackend = None
+    sdpa_kernel = None
+
 from transformers import GenerationMixin, PretrainedConfig, PreTrainedModel
 from transformers.generation import GenerationConfig
 from transformers.modeling_outputs import CausalLMOutput, CausalLMOutputWithPast
@@ -279,12 +290,18 @@ class Attention(nn.Module):
         # The start position is used to apply the RoPE embeddings to only the new tokens
         # when using the kv_cache in the attention mechanism.
         # We want to start from the last position in the cache.
-        start_pos = past_key_values[0].shape[1] if past_key_values is not None else 0
+        start_pos = 0
+        if past_key_values is not None and past_key_values[0] is not None:
+            start_pos = past_key_values[0].shape[1]
 
         # apply rotary positional embeddings
         queries, keys = self.rope(queries, keys, start_pos)
 
-        if past_key_values is not None:
+        if (
+            past_key_values is not None
+            and past_key_values[0] is not None
+            and past_key_values[1] is not None
+        ):
             keys = torch.cat([past_key_values[0], keys], dim=1)
             values = torch.cat([past_key_values[1], values], dim=1)
 
@@ -308,9 +325,18 @@ class Attention(nn.Module):
             values = values.repeat_interleave(self.n_rep, dim=-3)
             apply_gqa = False
 
-        backends = [SDPBackend.CUDNN_ATTENTION, SDPBackend.MATH]
-
-        with sdpa_kernel(backends=backends):
+        if HAS_TORCH_ATTENTION:
+            backends = [SDPBackend.CUDNN_ATTENTION, SDPBackend.MATH]
+            with sdpa_kernel(backends=backends):
+                attn_output = F.scaled_dot_product_attention(
+                    queries.contiguous(),
+                    keys.contiguous(),
+                    values.contiguous(),
+                    attn_mask=mask.to(queries.dtype) if mask is not None else None,
+                    enable_gqa=apply_gqa,
+                )
+        else:
+            # Fallback for older PyTorch versions - use default backend
             attn_output = F.scaled_dot_product_attention(
                 queries.contiguous(),
                 keys.contiguous(),
@@ -482,7 +508,13 @@ class PicoDecoder(nn.Module):
         # Calculate start position from past cached KV pairs. Remember that each layer has its
         # own KV Cache. So when we index past_key_values, we need to index into the KV pairs for the
         # correct layer and then for either the keys or values.
-        start_pos = 0 if past_key_values is None else past_key_values[0][0].shape[1]
+        start_pos = 0
+        if (
+            past_key_values is not None
+            and past_key_values[0] is not None
+            and past_key_values[0][0] is not None
+        ):
+            start_pos = past_key_values[0][0].shape[1]
 
         # Create causal mask for current sequence
         mask = None
@@ -503,9 +535,17 @@ class PicoDecoder(nn.Module):
 
         # Process through transformer blocks
         for idx, layer in enumerate(self.layers):
-            layer_past_key_values = (
-                past_key_values[idx] if past_key_values is not None else None
-            )
+            layer_past_key_values = None
+            if past_key_values is not None:
+                try:
+                    # Handle both tuple-based cache and HuggingFace cache objects
+                    if hasattr(past_key_values, "__getitem__") and idx < len(
+                        past_key_values
+                    ):
+                        layer_past_key_values = past_key_values[idx]
+                except (KeyError, IndexError, TypeError):
+                    # If we can't access the cache properly, just skip it
+                    layer_past_key_values = None
 
             h, layer_cached_key_values = layer(
                 h, mask=mask, past_key_values=layer_past_key_values, use_cache=use_cache
